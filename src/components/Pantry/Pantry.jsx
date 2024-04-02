@@ -1,19 +1,25 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import './Pantry.css';
+import pantryData from './pantryData.json'; // Assuming the JSON file is named pantryData.json and is in the same directory
 
 const Pantry = () => {
-    const products = [
-        { id: 1, name: 'Product 1', price: 10 },
-        { id: 2, name: 'Product 2', price: 20 },
-        { id: 3, name: 'Product 3', price: 30 },
-        // Add more products as needed
-    ];
+    const [pantryItems, setPantryItems] = useState([]);
+
+    useEffect(() => {
+        // Mock fetching data from JSON file
+        setPantryItems(pantryData.Pantry);
+    }, []);
 
     return (
-        <div className="grid-container">
-            {products.map((product) => (
-                <div key={product.id} className="grid-item">
-                    <h3>{product.name}</h3>
-                    <p>Price: ${product.price}</p>
+        <div className="pantry-grid">
+            {pantryItems.map((item, index) => (
+                <div key={index} className="pantry-item">
+                    <div className="pantry-image-container">
+                        <img src={item.ImageURL} alt={item.Name} className="pantry-image" />
+                    </div>
+                    <h3>{item.Name}</h3>
+                    <p>{`${item.Quantity} ${item.Unit}`}</p>
+                    <p>Exp: {item.ExpirationDate}</p>
                 </div>
             ))}
         </div>
