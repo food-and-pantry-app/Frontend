@@ -1,37 +1,59 @@
 .pantry-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Define 4 columns */
-    grid-gap: 20px;
-    justify-content: center;
-    padding: 20px;
-    max-width: 1280px; /* Set the max width */
-    margin: auto; /* Center the grid */
-  }
-  
-  .pantry-item {
-    border: 5px solid black;
-    padding: 10px;
-    border-radius: 25px;
-    background-color: grey;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    text-align: center;
-  }
-  
-  .pantry-image-container {
-    width: 100%; /* Adjust width to maintain aspect ratio */
-    padding-top: 66.66%; /* 2:3 aspect ratio */
-    background-color: #cccccc; /* Light grey background */
-    position: relative;
-    margin-bottom: 10px; /* Space between the image container and text */
-  }
-  
-  .pantry-image {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 90%; /* Adjust based on preference */
-    max-height: 90%; /* Adjust based on preference */
-    border-radius: 5px;
-  }
-  
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Define 4 columns */
+  grid-column-gap: 10px;
+  grid-row-gap: 30px;
+  justify-content: center;
+  padding: 20px;
+  max-width: 1280px; /* Set the max width */
+  margin: auto; /* Center the grid */
+}
+
+.pantry-item {
+  /* border: 5px solid black; */
+  border-radius: 2.5px;
+  background-color: #000000; /* Corrected background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 231px;
+  min-height: 275px;
+}
+
+.pantry-item-header {
+  font-size: 24px; /* Set font size to 24px */
+  font-weight: 600;
+  font-family: 'Times New Roman', serif; /* Added fallback font */
+  color: #ffffff; /* White text color */
+  background-color: #9f9f9f; /* Corrected background color code */
+  margin: 0;
+  padding: 0;
+  width: 100%; /* Ensure it fills the container horizontally */
+  height: 48px; /* Set the height of the header */
+  display: flex; /* Use flexbox to center content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.pantry-image-container {
+  width: 100%; /* Adjust width to maintain aspect ratio */
+  padding-top: 66.66%; /* 2:3 aspect ratio */
+  background-color: 000000; /* Light grey background, corrected color */
+  opacity: 20%;
+  position: relative;
+  margin: 5px 0;
+  /* border-radius: 2.5px; */
+  /* border: 5px solid black; */
+}
+
+.pantry-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90%; /* Adjust based on preference */
+  max-height: 90%; /* Adjust based on preference */
+  border-radius: 5px;
+}

@@ -2,9 +2,7 @@ import './App.css';
 import Pantry from './components/Pantry/Pantry';
 
 function App() {
-  return (
-    <Pantry/>
-  );
+  return <Pantry />;
 }
 
 export default App;

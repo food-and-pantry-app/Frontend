@@ -1,61 +1,57 @@
-
-
 <p align="center">
   <img src="./src/assets/dineinFrontend.webp" alt="DineIn Frontend"/>
 </p>
 
----
+# DineIn Frontend Project Setup
 
+Welcome to the DineIn Frontend project! Follow these simple steps to get started.
 
+## Project Initialization
 
-```markdown
-# DineIn Frontend
+First, clone the repository and navigate into the project directory:
 
-Welcome to the DineIn frontend repository. DineIn aims to streamline pantry management, recipe discovery, and grocery shopping through a user-friendly interface. This guide will help you set up your development environment and start contributing to the project.
-
-## Quick Start
-
-1. **Prerequisites**: Ensure you have Node.js and npm installed. [Node.js](https://nodejs.org/en/download/)
-2. **Clone the repository**:
-
+```sh
+git clone https://github.com/food-and-pantry-app/Frontend.git
+cd Frontend
 ```
 
-   git clone https://github.com/food-and-pantry-app/Frontend.git
-   cd Frontend
+Install the project dependencies:
 
+```sh
+npm install
 ```
 
-3. **Install dependencies**:
+## Running the Project
 
+To start the project and view it in the browser, run:
+
+```sh
+npm run dev
 ```
 
-   npm install
+Your project will be available at `http://localhost:5173/`. Vite will automatically open it in your default web browser.
 
+## Setting Up Prettier in VS Code
+
+To ensure consistent formatting across the team, we use Prettier. Here's how to set it up in Visual Studio Code (VS Code).
+
+1. Install the Prettier - Code Formatter extension in VS Code. Go to Extensions (`Ctrl+Shift+X` or `Cmd+Shift+X` on macOS), search for "Prettier - Code formatter", and click Install.
+2. Enable "Format On Save" by opening Settings (`Ctrl+,` or `Cmd+,` on macOS), searching for "Format On Save", and checking the box.
+3. To ensure Prettier formats our project files on save, create or modify the `.vscode/settings.json` file in the project root with the following settings:
+
+```json
+{
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+  // Include other relevant file types as necessary
+}
 ```
 
-4. **Run the development server**:
+If you encounter any issues with Prettier not running on save, ensure you've restarted VS Code after making changes to the settings.
 
-```
-
-   npm run dev
-
-
-   Your development server is now running and accessible at `http://localhost:3000`.
-
-## Tools and Libraries
-
-- **Vite**: A fast, modern build tool for Vue, React, and more. [Vite Documentation](https://vitejs.dev/guide/)
-- **React**: A library for building user interfaces. [React Documentation](https://reactjs.org/docs/getting-started.html)
-- **Axios**: For making HTTP requests from the browser. [Axios Documentation](https://axios-http.com/docs/intro)
-
-## Useful Commands
-
-- `npm run dev`: Starts the Vite development server.
-- `npm run build`: Builds the app for production to the `dist` folder.
-- `npm run preview`: Locally preview production build.
-
-## Contributing
-
-Please follow the project's coding standards and guidelines. If you're new to the project, look for open issues labeled `good first issue`.
-
-For more information on how to contribute, please refer to our [contribution guidelines](#).
+Happy coding!

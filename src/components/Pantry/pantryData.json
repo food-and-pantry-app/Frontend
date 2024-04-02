@@ -1,182 +1,181 @@
 {
-    "UserID": "user123",
-    "Pantry": [
-      {
-        "Name": "Carrot",
-        "Quantity": 5,
-        "Unit": "pcs",
-        "Tags": ["Produce"],
-        "ImageURL": "https://example.com/path/to/carrot_image.jpg",
-        "ExpirationDate": "2024-05-01"
-      },
-      {
-        "Name": "Cheddar Cheese",
-        "Quantity": 2,
-        "Unit": "lbs",
-        "Tags": ["Dairy & Eggs"],
-        "ImageURL": "https://example.com/path/to/cheddar_cheese_image.jpg",
-        "ExpirationDate": "2024-06-15"
-      },
-      {
-        "Name": "Chicken Breast",
-        "Quantity": 1,
-        "Unit": "kg",
-        "Tags": ["Meat & Seafood"],
-        "ImageURL": "https://example.com/path/to/chicken_breast_image.jpg",
-        "ExpirationDate": "2024-04-20"
-      },
-      {
-        "Name": "Tomato Sauce",
-        "Quantity": 3,
-        "Unit": "cans",
-        "Tags": ["Canned Goods"],
-        "ImageURL": "https://example.com/path/to/tomato_sauce_image.jpg",
-        "ExpirationDate": "2024-07-22"
-      },
-      {
-        "Name": "Whole Wheat Pasta",
-        "Quantity": 2,
-        "Unit": "packs",
-        "Tags": ["Dry Goods"],
-        "ImageURL": "https://example.com/path/to/whole_wheat_pasta_image.jpg",
-        "ExpirationDate": "2024-08-30"
-      },
-      {
-        "Name": "Almond Milk",
-        "Quantity": 2,
-        "Unit": "liters",
-        "Tags": ["Dairy & Eggs"],
-        "ImageURL": "https://example.com/path/to/almond_milk_image.jpg",
-        "ExpirationDate": "2024-09-10"
-      },
-      {
-        "Name": "Brown Rice",
-        "Quantity": 3,
-        "Unit": "lbs",
-        "Tags": ["Dry Goods"],
-        "ImageURL": "https://example.com/path/to/brown_rice_image.jpg",
-        "ExpirationDate": "2024-10-05"
-      },
-      {
-        "Name": "Quinoa",
-        "Quantity": 1,
-        "Unit": "lbs",
-        "Tags": ["Dry Goods"],
-        "ImageURL": "https://example.com/path/to/quinoa_image.jpg",
-        "ExpirationDate": "2024-11-20"
-      },
-      {
-        "Name": "Olive Oil",
-        "Quantity": 1,
-        "Unit": "bottle",
-        "Tags": ["Oils & Vinegars"],
-        "ImageURL": "https://example.com/path/to/olive_oil_image.jpg",
-        "ExpirationDate": "2024-12-15"
-      },
-      {
-        "Name": "Granola Bars",
-        "Quantity": 5,
-        "Unit": "pcs",
-        "Tags": ["Snacks"],
-        "ImageURL": "https://example.com/path/to/granola_bars_image.jpg",
-        "ExpirationDate": "2024-01-25"
-      },
-      {
-        "Name": "Frozen Peas",
-        "Quantity": 2,
-        "Unit": "bags",
-        "Tags": ["Frozen Foods"],
-        "ImageURL": "https://example.com/path/to/frozen_peas_image.jpg",
-        "ExpirationDate": "2024-02-17"
-      },
-      {
-        "Name": "Sparkling Water",
-        "Quantity": 6,
-        "Unit": "bottles",
-        "Tags": ["Beverages"],
-        "ImageURL": "https://example.com/path/to/sparkling_water_image.jpg",
-        "ExpirationDate": "2024-03-22"
-      },
-      {
-        "Name": "Maple Syrup",
-        "Quantity": 1,
-        "Unit": "bottle",
-        "Tags": ["Sweets"],
-        "ImageURL": "https://example.com/path/to/maple_syrup_image.jpg",
-        "ExpirationDate": "2024-08-12"
-      },
-      {
-        "Name": "Black Beans",
-        "Quantity": 4,
-        "Unit": "cans",
-        "Tags": ["Canned Goods"],
-        "ImageURL": "https://example.com/path/to/black_beans_image.jpg",
-        "ExpirationDate": "2024-07-19"
-      },
-      {
-        "Name": "Sourdough Bread",
-        "Quantity": 2,
-        "Unit": "loaves",
-        "Tags": ["Bread & Bakery"],
-        "ImageURL": "https://example.com/path/to/sourdough_bread_image.jpg",
-        "ExpirationDate": "2024-03-30"
-      },
-      {
-        "Name": "Strawberries",
-        "Quantity": 1,
-        "Unit": "lbs",
-        "Tags": ["Produce"],
-        "ImageURL": "https://example.com/path/to/strawberries_image.jpg",
-        "ExpirationDate": "2024-04-05"
-      },
-      {
-        "Name": "Greek Yogurt",
-        "Quantity": 3,
-        "Unit": "cups",
-        "Tags": ["Dairy & Eggs"],
-        "ImageURL": "https://example.com/path/to/greek_yogurt_image.jpg",
-        "ExpirationDate": "2024-05-20"
-      },
-      {
-        "Name": "Salmon Fillets",
-        "Quantity": 2,
-        "Unit": "kg",
-        "Tags": ["Meat & Seafood"],
-        "ImageURL": "https://example.com/path/to/salmon_fillets_image.jpg",
-        "ExpirationDate": "2024-06-08"
-      },
-      {
-        "Name": "Walnuts",
-        "Quantity": 1,
-        "Unit": "lbs",
-        "Tags": ["Snacks"],
-        "ImageURL": "https://example.com/path/to/walnuts_image.jpg",
-        "ExpirationDate": "2024-11-15"
-      },
-      {
-        "Name": "Honey",
-        "Quantity": 1,
-        "Unit": "jar",
-        "Tags": ["Sweets"],
-        "ImageURL": "https://example.com/path/to/honey_image.jpg",
-        "ExpirationDate": "2024-12-22"
-      },
-      {
-        "Name": "Green Tea",
-        "Quantity": 1,
-        "Unit": "box",
-        "Tags": ["Beverages"],
-        "ImageURL": "https://example.com/path/to/green_tea_image.jpg",
-        "ExpirationDate": "2024-09-27"
-      },
-      {
-        "Name": "Frozen Pizza",
-        "Quantity": 2,
-        "Unit": "pcs",
-        "Tags": ["Frozen Foods"],
-        "ImageURL": "https://example.com/path/to/frozen_pizza_image.jpg",
-        "ExpirationDate": "2024-10-31"
-      }
-    ]
-  }
-  
+  "UserID": "user123",
+  "Pantry": [
+    {
+      "Name": "Carrot",
+      "Quantity": 5,
+      "Unit": "pcs",
+      "Tags": ["Produce"],
+      "ImageURL": "https://example.com/path/to/carrot_image.jpg",
+      "ExpirationDate": "2024-05-01"
+    },
+    {
+      "Name": "Cheddar Cheese",
+      "Quantity": 2,
+      "Unit": "lbs",
+      "Tags": ["Dairy & Eggs"],
+      "ImageURL": "https://example.com/path/to/cheddar_cheese_image.jpg",
+      "ExpirationDate": "2024-06-15"
+    },
+    {
+      "Name": "Chicken Breast",
+      "Quantity": 1,
+      "Unit": "kg",
+      "Tags": ["Meat & Seafood"],
+      "ImageURL": "https://example.com/path/to/chicken_breast_image.jpg",
+      "ExpirationDate": "2024-04-20"
+    },
+    {
+      "Name": "Tomato Sauce",
+      "Quantity": 3,
+      "Unit": "cans",
+      "Tags": ["Canned Goods"],
+      "ImageURL": "https://example.com/path/to/tomato_sauce_image.jpg",
+      "ExpirationDate": "2024-07-22"
+    },
+    {
+      "Name": "Whole Wheat Pasta",
+      "Quantity": 2,
+      "Unit": "packs",
+      "Tags": ["Dry Goods"],
+      "ImageURL": "https://example.com/path/to/whole_wheat_pasta_image.jpg",
+      "ExpirationDate": "2024-08-30"
+    },
+    {
+      "Name": "Almond Milk",
+      "Quantity": 2,
+      "Unit": "liters",
+      "Tags": ["Dairy & Eggs"],
+      "ImageURL": "https://example.com/path/to/almond_milk_image.jpg",
+      "ExpirationDate": "2024-09-10"
+    },
+    {
+      "Name": "Brown Rice",
+      "Quantity": 3,
+      "Unit": "lbs",
+      "Tags": ["Dry Goods"],
+      "ImageURL": "https://example.com/path/to/brown_rice_image.jpg",
+      "ExpirationDate": "2024-10-05"
+    },
+    {
+      "Name": "Quinoa",
+      "Quantity": 1,
+      "Unit": "lbs",
+      "Tags": ["Dry Goods"],
+      "ImageURL": "https://example.com/path/to/quinoa_image.jpg",
+      "ExpirationDate": "2024-11-20"
+    },
+    {
+      "Name": "Olive Oil",
+      "Quantity": 1,
+      "Unit": "bottle",
+      "Tags": ["Oils & Vinegars"],
+      "ImageURL": "https://example.com/path/to/olive_oil_image.jpg",
+      "ExpirationDate": "2024-12-15"
+    },
+    {
+      "Name": "Granola Bars",
+      "Quantity": 5,
+      "Unit": "pcs",
+      "Tags": ["Snacks"],
+      "ImageURL": "https://example.com/path/to/granola_bars_image.jpg",
+      "ExpirationDate": "2024-01-25"
+    },
+    {
+      "Name": "Frozen Peas",
+      "Quantity": 2,
+      "Unit": "bags",
+      "Tags": ["Frozen Foods"],
+      "ImageURL": "https://example.com/path/to/frozen_peas_image.jpg",
+      "ExpirationDate": "2024-02-17"
+    },
+    {
+      "Name": "Sparkling Water",
+      "Quantity": 6,
+      "Unit": "bottles",
+      "Tags": ["Beverages"],
+      "ImageURL": "https://example.com/path/to/sparkling_water_image.jpg",
+      "ExpirationDate": "2024-03-22"
+    },
+    {
+      "Name": "Maple Syrup",
+      "Quantity": 1,
+      "Unit": "bottle",
+      "Tags": ["Sweets"],
+      "ImageURL": "https://example.com/path/to/maple_syrup_image.jpg",
+      "ExpirationDate": "2024-08-12"
+    },
+    {
+      "Name": "Black Beans",
+      "Quantity": 4,
+      "Unit": "cans",
+      "Tags": ["Canned Goods"],
+      "ImageURL": "https://example.com/path/to/black_beans_image.jpg",
+      "ExpirationDate": "2024-07-19"
+    },
+    {
+      "Name": "Sourdough Bread",
+      "Quantity": 2,
+      "Unit": "loaves",
+      "Tags": ["Bread & Bakery"],
+      "ImageURL": "https://example.com/path/to/sourdough_bread_image.jpg",
+      "ExpirationDate": "2024-03-30"
+    },
+    {
+      "Name": "Strawberries",
+      "Quantity": 1,
+      "Unit": "lbs",
+      "Tags": ["Produce"],
+      "ImageURL": "https://example.com/path/to/strawberries_image.jpg",
+      "ExpirationDate": "2024-04-05"
+    },
+    {
+      "Name": "Greek Yogurt",
+      "Quantity": 3,
+      "Unit": "cups",
+      "Tags": ["Dairy & Eggs"],
+      "ImageURL": "https://example.com/path/to/greek_yogurt_image.jpg",
+      "ExpirationDate": "2024-05-20"
+    },
+    {
+      "Name": "Salmon Fillets",
+      "Quantity": 2,
+      "Unit": "kg",
+      "Tags": ["Meat & Seafood"],
+      "ImageURL": "https://example.com/path/to/salmon_fillets_image.jpg",
+      "ExpirationDate": "2024-06-08"
+    },
+    {
+      "Name": "Walnuts",
+      "Quantity": 1,
+      "Unit": "lbs",
+      "Tags": ["Snacks"],
+      "ImageURL": "https://example.com/path/to/walnuts_image.jpg",
+      "ExpirationDate": "2024-11-15"
+    },
+    {
+      "Name": "Honey",
+      "Quantity": 1,
+      "Unit": "jar",
+      "Tags": ["Sweets"],
+      "ImageURL": "https://example.com/path/to/honey_image.jpg",
+      "ExpirationDate": "2024-12-22"
+    },
+    {
+      "Name": "Green Tea",
+      "Quantity": 1,
+      "Unit": "box",
+      "Tags": ["Beverages"],
+      "ImageURL": "https://example.com/path/to/green_tea_image.jpg",
+      "ExpirationDate": "2024-09-27"
+    },
+    {
+      "Name": "Frozen Pizza",
+      "Quantity": 2,
+      "Unit": "pcs",
+      "Tags": ["Frozen Foods"],
+      "ImageURL": "https://example.com/path/to/frozen_pizza_image.jpg",
+      "ExpirationDate": "2024-10-31"
+    }
+  ]
+}
