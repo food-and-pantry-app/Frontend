@@ -37,21 +37,4 @@ To ensure consistent formatting across the team, we use Prettier. Here's how to 
 
 1. Install the Prettier - Code Formatter extension in VS Code. Go to Extensions (`Ctrl+Shift+X` or `Cmd+Shift+X` on macOS), search for "Prettier - Code formatter", and click Install.
 2. Enable "Format On Save" by opening Settings (`Ctrl+,` or `Cmd+,` on macOS), searching for "Format On Save", and checking the box.
-3. To ensure Prettier formats our project files on save, create or modify the `.vscode/settings.json` file in the project root with the following settings:
-
-```json
-{
-  "editor.formatOnSave": true,
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
-  // Include other relevant file types as necessary
-}
-```
-
-If you encounter any issues with Prettier not running on save, ensure you've restarted VS Code after making changes to the settings.
-
-Happy coding!
+3. Happy coding!
