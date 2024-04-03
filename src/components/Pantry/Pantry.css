@@ -1,111 +1,123 @@
+/* Pantry Section - Sets the background and layout for the pantry */
 .pantry {
   width: 100vw;
   height: auto;
-  background-image: url('../../assets/papyrus.png'); /* Adjust the path to your image */
-  background-repeat: repeat; /* Image repeats to fill the space */
-  background-attachment: fixed; /* Creates the parallax effect */
-  background-size: 42%; /* Makes the background image twice as large */
+  background-image: url('../../assets/papyrus.png');
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: 42%;
 }
 
+/* Pantry Grid - Organizes pantry items in a grid */
 .pantry-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Define 4 columns */
-  grid-column-gap: 10px;
-  grid-row-gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
   justify-content: center;
   padding: 20px;
-  max-width: 1280px; /* Set the max width */
-  margin: auto; /* Center the grid */
+  max-width: 1280px;
+  margin: auto;
 }
 
+/* Resets margins and paddings for all child elements */
+.pantry-item * {
+  margin: 0;
+  padding: 0;
+}
+
+/* Pantry Item - Style for individual pantry items */
 .pantry-item {
-  border-radius: 7.5px;
-  background-color: rgba(
-    42,
-    42,
-    42,
-    0.666
-  ); /* Semi-transparent white for a glass effect */
-  backdrop-filter: blur(5px); /* Blur effect for the glass look */
-  -webkit-backdrop-filter: blur(2.5px); /* For Safari */
-  border: 1px solid rgba(42, 42, 42, 0.25); /* Subtle border for the glass effect */
-  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   min-width: 231px;
   min-height: 275px;
-  box-shadow: 2.5px 2.5px 2.5px rgba(42, 42, 42, 0.42); /* Soft shadow for depth */
-  color: #fff; /* Text color */
+  background-color: rgba(42, 42, 42, 0.42);
+  border-radius: 7.5px;
+  border: solid 2.5px rgba(42, 42, 42, 1);
+  box-shadow:
+    inset 5px 5px 5px 0 rgba(255, 255, 255, 0.75),
+    inset -5px -5px 5px 0 rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  color: #fff;
 }
 
+/* Pantry Item Names - Styles the name of the pantry item */
 .pantry-item-names {
-  border-radius: 2.5px;
-  font-size: 20px; /* Set font size to 24px */
-  font-weight: 600;
-  font-family: 'Times New Roman', serif; /* Added fallback font */
-  color: #ffffff; /* White text color */
+  width: 100%;
+  height: 1rem;
+  padding: 1rem 0;
   background-color: rgba(42, 42, 42, 0.666);
-
-  padding: 1rem 0; /* Padding for better spacing */
-  width: 100%; /* Ensure it fills the container horizontally */
-  height: 1rem; /* Adjust height for better spacing */
-  display: flex; /* Use flexbox to center content */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Times New Roman', serif;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* Pantry Item Tags - Styles the tags for the pantry item */
 .pantry-item-tags {
   width: 100%;
   height: 10%;
+  background-color: rgba(42, 42, 42, 0.42);
+  color: white;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgba(42, 42, 42, 0.42);
-  color: white;
 }
 
+/* Pantry Image Container - Styles the container for the pantry item image */
 .pantry-image-container {
-  width: 100%; /* Full width of the container */
-  aspect-ratio: 3 / 2; /* Landscape aspect ratio */
-  background-color: rgba(42, 42, 42, 0.5);
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  background-color: rgba(42, 42, 42, 0.666);
   position: relative;
-  display: flex; /* Use flex to center the image inside */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  overflow: hidden; /* Prevent the image from overflowing */
-  /* border-radius: 2.5px; Uncomment if border radius is desired */
-  /* border: 5px solid black; Uncomment if border is desired */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
+/* Pantry Image - Styles the image within its container */
 .pantry-image {
-  max-width: 100%; /* Max width to fit container */
-  max-height: 100%; /* Max height to maintain aspect ratio */
+  max-width: 100%;
+  max-height: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* border-radius: 5px; */
 }
 
+/* Pantry Item Details - Styles the container for quantity and expiration date */
 .pantry-item-details {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 100%;
   height: auto;
   background-color: rgba(42, 42, 42, 0.42);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* Quantity and Expiration Date - Styles for displaying the quantity and expiration */
 .pantry-item-quantity,
 .pantry-item-expiration {
-  width: 100%; /* Ensure it takes up the width of its container */
-  padding: 0.5rem 0; /* Padding for better spacing and centering */
-  margin: 0; /* Adjusted margin for spacing */
+  width: 100%;
+  padding: 0.5rem 0;
   text-align: center;
-  /* margin: 0; */
-  font-weight: bold; /* Optional: if you want the text to be bold */
-  /* background-color: rgba(42, 42, 42, 0.3); */
+  font-weight: bold;
+}
+
+.pantry-item-quantity {
+  margin-top: 0.5rem;
+}
+
+.pantry-item-expiration {
+  margin-bottom: 0.75rem;
 }
