@@ -1,0 +1,72 @@
+.recipes-container {
+  display: flex;
+  overflow-x: auto;
+  align-items: stretch;
+  height: 100vh;
+  margin-top: 15vh;
+}
+
+.buffer {
+  flex: 0 0 33vw;
+}
+
+.recipe-card {
+  flex: 0 0 33vw;
+  margin-right: 33vw;
+  height: 75vh;
+  background-size: cover;
+  position: relative;
+  background-color: rgba(42, 42, 42, 0.42);
+  border-radius: 6px;
+  border: solid 1px rgba(0, 0, 0, 0.25);
+  box-shadow:
+    inset 2px 2px 1px 0 rgba(255, 255, 255, 0.5),
+    inset -2px -2px 1px 0 rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.title {
+  align-items: left;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 10px 0;
+  font-family: 'Ringbearer';
+}
+
+.img-container {
+  aspect-ratio: 3 / 2; /* Maintain a fixed aspect ratio of 3:2 */
+  background-color: rgba(23, 23, 23, 0.666);
+  position: relative; /* Position relative to allow absolute positioning of its children */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: rgb(42, 42, 42) 1px solid;
+  border-radius: 6px;
+}
+
+img {
+  max-width: 99%; /* Max width is 100% of its parent */
+  max-height: 99%; /* Max height is 100% of its parent */
+  position: absolute; /* Positioned absolutely to the center using the transform below */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the image within the container */
+}
+
+.details {
+  overflow-y: auto;
+  padding: 10px;
+  background-color: rgba(23, 23, 23, 0.666);
+  border: rgb(42, 42, 42) 1px solid;
+  border-radius: 6px;
+}
+
+/* Add additional styles as needed */

@@ -1,34 +1,56 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useState } from 'react';
+import recipesData from './recipes.json';
+import './Recipes.css';
 
-const Recipes = () => {
-    const containerRef = useRef(null);
+export const Recipes = () => {
+  const [data, setData] = useState([]);
 
-    const handleScroll = (direction) => {
-        const container = containerRef.current;
-        const scrollAmount = 200; // Adjust this value to control the scroll speed
+  useEffect(() => {
+    setData(recipesData);
+  }, []);
 
-        if (direction === 'left') {
-            container.scrollLeft -= scrollAmount;
-        } else if (direction === 'right') {
-            container.scrollLeft += scrollAmount;
-        }
-    };
-
-    return (
-        <div className="recipes-container" ref={containerRef}>
-            {/* Your recipe cards or items go here */}
-            {/* Example: */}
-            <div className="recipe-card">Recipe 1</div>
-            <div className="recipe-card">Recipe 2</div>
-            <div className="recipe-card">Recipe 3</div>
-            <div className="recipe-card">Recipe 4</div>
-            <div className="recipe-card">Recipe 5</div>
-
-            {/* Scroll buttons */}
-            <button onClick={() => handleScroll('left')}>Scroll Left</button>
-            <button onClick={() => handleScroll('right')}>Scroll Right</button>
+  return (
+    <div className="recipes-container">
+      <div className="buffer" />
+      {data.map((recipe, index) => (
+        <div key={index} className="recipe-card">
+          <h2 className="title">{recipe.Title}</h2>
+          <div className="img-container">
+            <img src={recipe.Images[0]} alt={`Image of ${recipe.Title}`} />
+          </div>
+          <p>{recipe.Description}</p>
+          <div className="details">
+            <h3>Ingredients:</h3>
+            <ul>
+              {recipe.Ingredients.map((ingredient, idx) => (
+                <li
+                  key={idx}
+                >{`${ingredient.Quantity} ${ingredient.Unit} ${ingredient.Name}`}</li>
+              ))}
+            </ul>
+            <h3>Instructions:</h3>
+            <ol>
+              {recipe.Instructions.map((instruction, idx) => (
+                <li key={idx}>{instruction}</li>
+              ))}
+            </ol>
+            <p>
+              <strong>Prep Time:</strong> {recipe.PrepTime} minutes
+            </p>
+            <p>
+              <strong>Cook Time:</strong> {recipe.CookTime} minutes
+            </p>
+            <p>
+              <strong>Total Time:</strong> {recipe.TotalTime} minutes
+            </p>
+            <p>
+              <strong>Servings:</strong> {recipe.Servings}
+            </p>
+          </div>
         </div>
-    );
+      ))}
+    </div>
+  );
 };
 
-export default Recipes;
+export default Recipes; // Ensure the default export is correctly set

@@ -1,0 +1,204 @@
+[
+  {
+    "RecipeID": "recipe12",
+    "Title": "Falafel Wrap",
+    "Images": ["https://picsum.photos/seed/falafel/220/310"],
+    "Cuisine": "Middle Eastern",
+    "Description": "Crispy homemade falafel balls wrapped in a soft flatbread with veggies and tahini sauce.",
+    "Ingredients": [
+      { "Name": "Chickpeas", "Quantity": "2", "Unit": "cups" },
+      { "Name": "Garlic", "Quantity": "3", "Unit": "cloves" },
+      { "Name": "Parsley", "Quantity": "1", "Unit": "cup" },
+      { "Name": "Tahini", "Quantity": "1/4", "Unit": "cup" },
+      { "Name": "Lemon Juice", "Quantity": "2", "Unit": "tbsp" },
+      { "Name": "Flatbread", "Quantity": "4", "Unit": "pcs" }
+    ],
+    "Instructions": [
+      "Blend chickpeas, garlic, and parsley into a coarse mixture and form into balls.",
+      "Fry balls until golden and crispy.",
+      "Spread tahini on flatbread, add falafel, fresh vegetables, drizzle with lemon juice, and wrap."
+    ],
+    "PrepTime": 20,
+    "CookTime": 10,
+    "TotalTime": 30,
+    "Servings": 4,
+    "CreatedAt": "2024-08-10T00:00:00Z"
+  },
+  {
+    "RecipeID": "recipe13",
+    "Title": "Banh Mi",
+    "Images": ["https://picsum.photos/seed/banhmi/230/320"],
+    "Cuisine": "Vietnamese",
+    "Description": "Vietnamese sandwich filled with savory ingredients like pork, pickled vegetables, and spicy condiments.",
+    "Ingredients": [
+      { "Name": "Baguette", "Quantity": "1", "Unit": "pcs" },
+      { "Name": "Cooked Pork", "Quantity": "200", "Unit": "g" },
+      { "Name": "Daikon Radish", "Quantity": "1/2", "Unit": "pcs" },
+      { "Name": "Carrot", "Quantity": "1", "Unit": "pcs" },
+      { "Name": "Cilantro", "Quantity": "1/4", "Unit": "cup" },
+      { "Name": "Mayonnaise", "Quantity": "2", "Unit": "tbsp" },
+      { "Name": "Sriracha", "Quantity": "1", "Unit": "tbsp" }
+    ],
+    "Instructions": [
+      "Slice baguette lengthwise and spread mayonnaise and Sriracha.",
+      "Layer cooked pork, pickled daikon, carrot, and top with cilantro.",
+      "Close sandwich and serve."
+    ],
+    "PrepTime": 15,
+    "CookTime": 0,
+    "TotalTime": 15,
+    "Servings": 2,
+    "CreatedAt": "2024-09-15T00:00:00Z"
+  },
+  {
+    "RecipeID": "recipe14",
+    "Title": "Creamy Mushroom Risotto",
+    "Images": ["https://picsum.photos/seed/risotto/300/450"],
+    "Cuisine": "Italian",
+    "Description": "Rich and creamy risotto cooked slowly with fresh mushrooms, Parmesan cheese, and white wine.",
+    "Ingredients": [
+      { "Name": "Arborio Rice", "Quantity": "1", "Unit": "cup" },
+      { "Name": "Mushrooms", "Quantity": "2", "Unit": "cups" },
+      { "Name": "Onion", "Quantity": "1", "Unit": "pcs" },
+      { "Name": "White Wine", "Quantity": "1/2", "Unit": "cup" },
+      { "Name": "Chicken Broth", "Quantity": "4", "Unit": "cups" },
+      { "Name": "Parmesan Cheese", "Quantity": "1/2", "Unit": "cup" }
+    ],
+    "Instructions": [
+      "Sauté onions and mushrooms in butter until soft.",
+      "Add rice and toast lightly before deglazing with white wine.",
+      "Gradually add chicken broth, stirring constantly until rice is creamy and al dente.",
+      "Stir in Parmesan cheese and serve."
+    ],
+    "PrepTime": 10,
+    "CookTime": 30,
+    "TotalTime": 40,
+    "Servings": 4,
+    "CreatedAt": "2024-10-20T00:00:00Z"
+  },
+  {
+    "RecipeID": "recipe15",
+    "Title": "Thai Green Curry",
+    "Images": ["https://picsum.photos/seed/thaicurry/250/375"],
+    "Cuisine": "Thai",
+    "Description": "Spicy and aromatic Thai green curry with chicken, bamboo shoots, and basil.",
+    "Ingredients": [
+      { "Name": "Chicken Thighs", "Quantity": "500", "Unit": "g" },
+      { "Name": "Green Curry Paste", "Quantity": "3", "Unit": "tbsp" },
+      { "Name": "Coconut Milk", "Quantity": "1", "Unit": "can" },
+      { "Name": "Bamboo Shoots", "Quantity": "1", "Unit": "can" },
+      { "Name": "Basil Leaves", "Quantity": "1", "Unit": "cup" },
+      { "Name": "Fish Sauce", "Quantity": "1", "Unit": "tbsp" }
+    ],
+    "Instructions": [
+      "Brown chicken thighs and set aside.",
+      "Fry green curry paste until aromatic, then add coconut milk and bring to a simmer.",
+      "Add chicken, bamboo shoots, and simmer until cooked.",
+      "Finish with basil leaves and fish sauce before serving with steamed rice."
+    ],
+    "PrepTime": 15,
+    "CookTime": 25,
+    "TotalTime": 40,
+    "Servings": 4,
+    "CreatedAt": "2024-11-05T00:00:00Z"
+  },
+  {
+    "RecipeID": "recipe16",
+    "Title": "Lamb Rogan Josh",
+    "Images": ["https://picsum.photos/seed/roganjosh/310/205"],
+    "Cuisine": "Indian",
+    "Description": "Aromatic Kashmiri dish known for its tender lamb and vibrant spices.",
+    "Ingredients": [
+      { "Name": "Lamb Shoulder", "Quantity": "1", "Unit": "kg" },
+      { "Name": "Yogurt", "Quantity": "200", "Unit": "ml" },
+      { "Name": "Tomato Puree", "Quantity": "100", "Unit": "ml" },
+      { "Name": "Ginger", "Quantity": "2", "Unit": "tbsp" },
+      { "Name": "Garlic Cloves", "Quantity": "5", "Unit": "pcs" },
+      { "Name": "Garam Masala", "Quantity": "1", "Unit": "tbsp" },
+      { "Name": "Paprika", "Quantity": "2", "Unit": "tsp" }
+    ],
+    "Instructions": [
+      "Marinate the lamb in yogurt and spices overnight.",
+      "Brown the lamb in a hot pan, then add ginger and garlic.",
+      "Add tomato puree and simmer until the lamb is tender.",
+      "Serve with naan or rice."
+    ],
+    "PrepTime": 30,
+    "CookTime": 120,
+    "TotalTime": 150,
+    "Servings": 4,
+    "CreatedAt": "2024-12-10T00:00:00Z"
+  },
+  {
+    "RecipeID": "recipe17",
+    "Title": "Pan-Seared Salmon with Dill Sauce",
+    "Images": ["https://picsum.photos/seed/salmondill/320/210"],
+    "Cuisine": "American",
+    "Description": "Perfectly seared salmon fillets served with a creamy dill sauce.",
+    "Ingredients": [
+      { "Name": "Salmon Fillets", "Quantity": "4", "Unit": "pcs" },
+      { "Name": "Lemon Juice", "Quantity": "3", "Unit": "tbsp" },
+      { "Name": "Fresh Dill", "Quantity": "1/4", "Unit": "cup" },
+      { "Name": "Sour Cream", "Quantity": "1/2", "Unit": "cup" }
+    ],
+    "Instructions": [
+      "Season salmon with salt and pepper, sear in a hot skillet.",
+      "Mix sour cream, dill, and lemon juice to make the sauce.",
+      "Serve salmon with sauce and a side of steamed vegetables."
+    ],
+    "PrepTime": 10,
+    "CookTime": 15,
+    "TotalTime": 25,
+    "Servings": 4,
+    "CreatedAt": "2025-01-15T00:00:00Z"
+  },
+  {
+    "RecipeID": "recipe18",
+    "Title": "Avocado Toast with Poached Egg",
+    "Images": ["https://picsum.photos/seed/avocadotoast/280/400"],
+    "Cuisine": "American",
+    "Description": "Creamy avocado spread on toasted artisan bread topped with a perfectly poached egg.",
+    "Ingredients": [
+      { "Name": "Whole Wheat Bread", "Quantity": "4", "Unit": "slices" },
+      { "Name": "Ripe Avocado", "Quantity": "2", "Unit": "pcs" },
+      { "Name": "Eggs", "Quantity": "4", "Unit": "pcs" },
+      { "Name": "Red Pepper Flakes", "Quantity": "1", "Unit": "tsp" }
+    ],
+    "Instructions": [
+      "Toast the bread slices to desired crispness.",
+      "Mash the avocado with lemon juice, salt, and pepper.",
+      "Poach eggs to desired doneness.",
+      "Assemble by spreading avocado on toast, topping with poached egg and a sprinkle of red pepper flakes."
+    ],
+    "PrepTime": 5,
+    "CookTime": 10,
+    "TotalTime": 15,
+    "Servings": 4,
+    "CreatedAt": "2025-02-20T00:00:00Z"
+  },
+  {
+    "RecipeID": "recipe19",
+    "Title": "Chocolate Lava Cake",
+    "Images": ["https://picsum.photos/seed/lavacake/240/360"],
+    "Cuisine": "French",
+    "Description": "Decadent chocolate cakes with a molten chocolate center, served warm.",
+    "Ingredients": [
+      { "Name": "Dark Chocolate", "Quantity": "200", "Unit": "g" },
+      { "Name": "Butter", "Quantity": "200", "Unit": "g" },
+      { "Name": "Sugar", "Quantity": "150", "Unit": "g" },
+      { "Name": "Flour", "Quantity": "50", "Unit": "g" },
+      { "Name": "Eggs", "Quantity": "4", "Unit": "pcs" }
+    ],
+    "Instructions": [
+      "Melt chocolate and butter together.",
+      "Whisk in sugar and eggs until smooth.",
+      "Fold in flour, pour into ramekins, and bake until edges are firm but center is runny.",
+      "Serve immediately with vanilla ice cream."
+    ],
+    "PrepTime": 20,
+    "CookTime": 10,
+    "TotalTime": 30,
+    "Servings": 4,
+    "CreatedAt": "2025-03-25T00:00:00Z"
+  }
+]

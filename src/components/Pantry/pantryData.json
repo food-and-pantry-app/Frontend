@@ -2,59 +2,395 @@
   "UserID": "user123",
   "Pantry": [
     {
-      "Name": "Carrot",
+      "Name": "Sea Salt",
+      "Quantity": 1,
+      "Unit": "bottle",
+      "Tags": ["Spices & Herbs"],
+      "ImageURL": "https://picsum.photos/200/300?salt",
+      "ExpirationDate": "2025-01-01"
+    },
+    {
+      "Name": "Black Pepper",
+      "Quantity": 1,
+      "Unit": "bottle",
+      "Tags": ["Spices & Herbs"],
+      "ImageURL": "https://picsum.photos/200/300?blackpepper",
+      "ExpirationDate": "2025-01-01"
+    },
+    {
+      "Name": "Cumin",
+      "Quantity": 1,
+      "Unit": "bottle",
+      "Tags": ["Spices & Herbs"],
+      "ImageURL": "https://picsum.photos/200/300?cumin",
+      "ExpirationDate": "2025-01-01"
+    },
+    {
+      "Name": "Turmeric",
+      "Quantity": 1,
+      "Unit": "bottle",
+      "Tags": ["Spices & Herbs"],
+      "ImageURL": "https://picsum.photos/200/300?turmeric",
+      "ExpirationDate": "2025-01-01"
+    },
+    {
+      "Name": "Cayenne Pepper",
+      "Quantity": 1,
+      "Unit": "bottle",
+      "Tags": ["Spices & Herbs"],
+      "ImageURL": "https://picsum.photos/200/300?cayenne",
+      "ExpirationDate": "2025-01-01"
+    },
+    {
+      "Name": "Curry Powder",
+      "Quantity": 1,
+      "Unit": "bottle",
+      "Tags": ["Spices & Herbs"],
+      "ImageURL": "https://picsum.photos/200/300?curry",
+      "ExpirationDate": "2025-01-01"
+    },
+    {
+      "Name": "Garam Masala",
+      "Quantity": 1,
+      "Unit": "bottle",
+      "Tags": ["Spices & Herbs"],
+      "ImageURL": "https://picsum.photos/200/300?garammasala",
+      "ExpirationDate": "2025-01-01"
+    },
+    {
+      "Name": "Cardamom",
+      "Quantity": 1,
+      "Unit": "bottle",
+      "Tags": ["Spices & Herbs"],
+      "ImageURL": "https://picsum.photos/200/300?cardamom",
+      "ExpirationDate": "2025-01-01"
+    },
+    {
+      "Name": "Saffron",
+      "Quantity": 0.1,
+      "Unit": "bottle",
+      "Tags": ["Spices & Herbs"],
+      "ImageURL": "https://picsum.photos/200/300?saffron",
+      "ExpirationDate": "2025-01-01"
+    },
+    {
+      "Name": "Bay Leaves",
+      "Quantity": 20,
+      "Unit": "pcs",
+      "Tags": ["Spices & Herbs"],
+      "ImageURL": "https://picsum.photos/200/300?bayleaves",
+      "ExpirationDate": "2025-01-01"
+    },
+    {
+      "Name": "Salmon Fillets",
+      "Quantity": 2,
+      "Unit": "kg",
+      "Tags": ["Meat & Seafood"],
+      "ImageURL": "https://picsum.photos/200/300?salmon",
+      "ExpirationDate": "2024-06-08"
+    },
+    {
+      "Name": "Chicken Breast",
+      "Quantity": 1.5,
+      "Unit": "kg",
+      "Tags": ["Meat & Seafood"],
+      "ImageURL": "https://picsum.photos/200/300?chicken",
+      "ExpirationDate": "2024-04-20"
+    },
+    {
+      "Name": "Tuna Steaks",
+      "Quantity": 1,
+      "Unit": "kg",
+      "Tags": ["Meat & Seafood"],
+      "ImageURL": "https://picsum.photos/200/300?tuna",
+      "ExpirationDate": "2024-07-15"
+    },
+    {
+      "Name": "Ground Beef",
+      "Quantity": 2,
+      "Unit": "kg",
+      "Tags": ["Meat & Seafood"],
+      "ImageURL": "https://picsum.photos/200/300?beef",
+      "ExpirationDate": "2024-05-22"
+    },
+    {
+      "Name": "Pork Chops",
+      "Quantity": 4,
+      "Unit": "pcs",
+      "Tags": ["Meat & Seafood"],
+      "ImageURL": "https://picsum.photos/200/300?pork",
+      "ExpirationDate": "2024-08-31"
+    },
+    {
+      "Name": "Shrimp",
+      "Quantity": 500,
+      "Unit": "g",
+      "Tags": ["Meat & Seafood"],
+      "ImageURL": "https://picsum.photos/200/300?shrimp",
+      "ExpirationDate": "2024-09-14"
+    },
+    {
+      "Name": "Cod Fillets",
+      "Quantity": 1,
+      "Unit": "kg",
+      "Tags": ["Meat & Seafood"],
+      "ImageURL": "https://picsum.photos/200/300?cod",
+      "ExpirationDate": "2024-10-05"
+    },
+    {
+      "Name": "Carrots",
+      "Quantity": 6,
+      "Unit": "pcs",
+      "Tags": ["Produce"],
+      "ImageURL": "https://picsum.photos/200/300?carrots",
+      "ExpirationDate": "2024-05-01"
+    },
+    {
+      "Name": "Apples",
+      "Quantity": 4,
+      "Unit": "pcs",
+      "Tags": ["Produce"],
+      "ImageURL": "https://picsum.photos/200/300?apples",
+      "ExpirationDate": "2024-06-15"
+    },
+    {
+      "Name": "Spinach",
+      "Quantity": 250,
+      "Unit": "g",
+      "Tags": ["Produce"],
+      "ImageURL": "https://picsum.photos/200/300?spinach",
+      "ExpirationDate": "2024-04-20"
+    },
+    {
+      "Name": "Tomatoes",
       "Quantity": 5,
       "Unit": "pcs",
       "Tags": ["Produce"],
-      "ImageURL": "https://picsum.photos/200/300",
-      "ExpirationDate": "2024-05-01"
+      "ImageURL": "https://picsum.photos/200/300?tomatoes",
+      "ExpirationDate": "2024-07-22"
+    },
+    {
+      "Name": "Bell Peppers",
+      "Quantity": 3,
+      "Unit": "pcs",
+      "Tags": ["Produce"],
+      "ImageURL": "https://picsum.photos/200/300?peppers",
+      "ExpirationDate": "2024-08-30"
+    },
+    {
+      "Name": "Onions",
+      "Quantity": 2,
+      "Unit": "pcs",
+      "Tags": ["Produce"],
+      "ImageURL": "https://picsum.photos/200/300?onions",
+      "ExpirationDate": "2024-09-10"
+    },
+    {
+      "Name": "Garlic",
+      "Quantity": 10,
+      "Unit": "pcs",
+      "Tags": ["Produce"],
+      "ImageURL": "https://picsum.photos/200/300?garlic",
+      "ExpirationDate": "2024-10-05"
+    },
+    {
+      "Name": "Lemons",
+      "Quantity": 4,
+      "Unit": "pcs",
+      "Tags": ["Produce"],
+      "ImageURL": "https://picsum.photos/200/300?lemons",
+      "ExpirationDate": "2024-11-20"
+    },
+    {
+      "Name": "Potatoes",
+      "Quantity": 5,
+      "Unit": "lbs",
+      "Tags": ["Produce"],
+      "ImageURL": "https://picsum.photos/200/300?potatoes",
+      "ExpirationDate": "2024-12-15"
+    },
+    {
+      "Name": "Broccoli",
+      "Quantity": 2,
+      "Unit": "pcs",
+      "Tags": ["Produce"],
+      "ImageURL": "https://picsum.photos/200/300?broccoli",
+      "ExpirationDate": "2024-01-25"
+    },
+    {
+      "Name": "Mushrooms",
+      "Quantity": 200,
+      "Unit": "g",
+      "Tags": ["Produce"],
+      "ImageURL": "https://picsum.photos/200/300?mushrooms",
+      "ExpirationDate": "2024-02-17"
+    },
+    {
+      "Name": "Cucumbers",
+      "Quantity": 3,
+      "Unit": "pcs",
+      "Tags": ["Produce"],
+      "ImageURL": "https://picsum.photos/200/300?cucumbers",
+      "ExpirationDate": "2024-03-22"
     },
     {
       "Name": "Cheddar Cheese",
       "Quantity": 2,
       "Unit": "lbs",
       "Tags": ["Dairy & Eggs"],
-      "ImageURL": "https://picsum.photos/300/200",
+      "ImageURL": "https://picsum.photos/200/300?cheddar",
+      "ExpirationDate": "2024-05-15"
+    },
+    {
+      "Name": "Whole Milk",
+      "Quantity": 1,
+      "Unit": "gallon",
+      "Tags": ["Dairy & Eggs"],
+      "ImageURL": "https://picsum.photos/200/300?milk",
+      "ExpirationDate": "2024-05-20"
+    },
+    {
+      "Name": "Eggs",
+      "Quantity": 12,
+      "Unit": "pcs",
+      "Tags": ["Dairy & Eggs"],
+      "ImageURL": "https://picsum.photos/200/300?eggs",
+      "ExpirationDate": "2024-06-01"
+    },
+    {
+      "Name": "Greek Yogurt",
+      "Quantity": 3,
+      "Unit": "cups",
+      "Tags": ["Dairy & Eggs"],
+      "ImageURL": "https://picsum.photos/200/300?yogurt",
+      "ExpirationDate": "2024-05-25"
+    },
+    {
+      "Name": "Butter",
+      "Quantity": 1,
+      "Unit": "lbs",
+      "Tags": ["Dairy & Eggs"],
+      "ImageURL": "https://picsum.photos/200/300?butter",
+      "ExpirationDate": "2024-07-10"
+    },
+    {
+      "Name": "Cream Cheese",
+      "Quantity": 1,
+      "Unit": "lbs",
+      "Tags": ["Dairy & Eggs"],
+      "ImageURL": "https://picsum.photos/200/300?creamcheese",
       "ExpirationDate": "2024-06-15"
     },
     {
-      "Name": "Chicken Breast",
+      "Name": "Sour Cream",
       "Quantity": 1,
-      "Unit": "kg",
-      "Tags": ["Meat & Seafood"],
-      "ImageURL": "https://picsum.photos/200/200",
-      "ExpirationDate": "2024-04-20"
+      "Unit": "lbs",
+      "Tags": ["Dairy & Eggs"],
+      "ImageURL": "https://picsum.photos/200/300?sourcream",
+      "ExpirationDate": "2024-05-30"
     },
     {
-      "Name": "Tomato Sauce",
-      "Quantity": 3,
-      "Unit": "cans",
-      "Tags": ["Canned Goods"],
-      "ImageURL": "https://picsum.photos/300/300",
-      "ExpirationDate": "2024-07-22"
-    },
-    {
-      "Name": "Whole Wheat Pasta",
-      "Quantity": 2,
-      "Unit": "packs",
-      "Tags": ["Dry Goods"],
-      "ImageURL": "https://picsum.photos/250/250",
-      "ExpirationDate": "2024-08-30"
+      "Name": "Parmesan Cheese",
+      "Quantity": 0.5,
+      "Unit": "lbs",
+      "Tags": ["Dairy & Eggs"],
+      "ImageURL": "https://picsum.photos/200/300?parmesan",
+      "ExpirationDate": "2024-08-01"
     },
     {
       "Name": "Almond Milk",
       "Quantity": 2,
       "Unit": "liters",
       "Tags": ["Dairy & Eggs"],
-      "ImageURL": "https://picsum.photos/220/300",
-      "ExpirationDate": "2024-09-10"
+      "ImageURL": "https://picsum.photos/200/300?almondmilk",
+      "ExpirationDate": "2024-09-01"
+    },
+    {
+      "Name": "Tomato Sauce",
+      "Quantity": 3,
+      "Unit": "cans",
+      "Tags": ["Canned Goods"],
+      "ImageURL": "https://picsum.photos/200/300?tomatosauce",
+      "ExpirationDate": "2024-12-31"
+    },
+    {
+      "Name": "Chickpeas",
+      "Quantity": 2,
+      "Unit": "cans",
+      "Tags": ["Canned Goods"],
+      "ImageURL": "https://picsum.photos/200/300?chickpeas",
+      "ExpirationDate": "2025-01-15"
+    },
+    {
+      "Name": "Black Beans",
+      "Quantity": 4,
+      "Unit": "cans",
+      "Tags": ["Canned Goods"],
+      "ImageURL": "https://picsum.photos/200/300?blackbeans",
+      "ExpirationDate": "2025-02-20"
+    },
+    {
+      "Name": "Corn",
+      "Quantity": 2,
+      "Unit": "cans",
+      "Tags": ["Canned Goods"],
+      "ImageURL": "https://picsum.photos/200/300?corn",
+      "ExpirationDate": "2024-11-05"
+    },
+    {
+      "Name": "Coconut Milk",
+      "Quantity": 1,
+      "Unit": "cans",
+      "Tags": ["Canned Goods"],
+      "ImageURL": "https://picsum.photos/200/300?coconutmilk",
+      "ExpirationDate": "2025-03-25"
+    },
+    {
+      "Name": "Green Beans",
+      "Quantity": 2,
+      "Unit": "cans",
+      "Tags": ["Canned Goods"],
+      "ImageURL": "https://picsum.photos/200/300?greenbeans",
+      "ExpirationDate": "2024-12-15"
+    },
+    {
+      "Name": "Tuna",
+      "Quantity": 5,
+      "Unit": "cans",
+      "Tags": ["Canned Goods"],
+      "ImageURL": "https://picsum.photos/200/300?tuna",
+      "ExpirationDate": "2025-04-30"
+    },
+    {
+      "Name": "Chicken Broth",
+      "Quantity": 2,
+      "Unit": "cans",
+      "Tags": ["Canned Goods"],
+      "ImageURL": "https://picsum.photos/200/300?chickenbroth",
+      "ExpirationDate": "2025-05-10"
+    },
+    {
+      "Name": "Peas",
+      "Quantity": 3,
+      "Unit": "cans",
+      "Tags": ["Canned Goods"],
+      "ImageURL": "https://picsum.photos/200/300?peas",
+      "ExpirationDate": "2024-10-20"
+    },
+    {
+      "Name": "Whole Wheat Pasta",
+      "Quantity": 2,
+      "Unit": "packs",
+      "Tags": ["Dry Goods"],
+      "ImageURL": "https://picsum.photos/200/300?wholewheatpasta",
+      "ExpirationDate": "2024-08-30"
     },
     {
       "Name": "Brown Rice",
       "Quantity": 3,
       "Unit": "lbs",
       "Tags": ["Dry Goods"],
-      "ImageURL": "https://picsum.photos/300/220",
+      "ImageURL": "https://picsum.photos/200/300?brownrice",
       "ExpirationDate": "2024-10-05"
     },
     {
@@ -62,120 +398,648 @@
       "Quantity": 1,
       "Unit": "lbs",
       "Tags": ["Dry Goods"],
-      "ImageURL": "https://picsum.photos/400/300",
+      "ImageURL": "https://picsum.photos/200/300?quinoa",
       "ExpirationDate": "2024-11-20"
     },
     {
-      "Name": "Olive Oil",
+      "Name": "Lentils",
+      "Quantity": 2,
+      "Unit": "lbs",
+      "Tags": ["Dry Goods"],
+      "ImageURL": "https://picsum.photos/200/300?lentils",
+      "ExpirationDate": "2025-01-15"
+    },
+    {
+      "Name": "Chia Seeds",
       "Quantity": 1,
-      "Unit": "bottle",
-      "Tags": ["Oils & Vinegars"],
-      "ImageURL": "https://picsum.photos/200/400",
+      "Unit": "lbs",
+      "Tags": ["Dry Goods"],
+      "ImageURL": "https://picsum.photos/200/300?chiaseeds",
+      "ExpirationDate": "2025-03-25"
+    },
+    {
+      "Name": "Rolled Oats",
+      "Quantity": 2,
+      "Unit": "lbs",
+      "Tags": ["Dry Goods"],
+      "ImageURL": "https://picsum.photos/200/300?rolledoats",
       "ExpirationDate": "2024-12-15"
     },
     {
-      "Name": "Granola Bars",
-      "Quantity": 5,
-      "Unit": "pcs",
-      "Tags": ["Snacks"],
-      "ImageURL": "https://picsum.photos/250/300",
-      "ExpirationDate": "2024-01-25"
-    },
-    {
-      "Name": "Frozen Peas",
-      "Quantity": 2,
-      "Unit": "bags",
-      "Tags": ["Frozen Foods"],
-      "ImageURL": "https://picsum.photos/300/250",
-      "ExpirationDate": "2024-02-17"
-    },
-    {
-      "Name": "Sparkling Water",
-      "Quantity": 6,
-      "Unit": "bottles",
-      "Tags": ["Beverages"],
-      "ImageURL": "https://picsum.photos/350/200",
-      "ExpirationDate": "2024-03-22"
-    },
-    {
-      "Name": "Maple Syrup",
+      "Name": "Almond Flour",
       "Quantity": 1,
-      "Unit": "bottle",
-      "Tags": ["Sweets"],
-      "ImageURL": "https://picsum.photos/200/350",
-      "ExpirationDate": "2024-08-12"
+      "Unit": "lbs",
+      "Tags": ["Dry Goods"],
+      "ImageURL": "https://picsum.photos/200/300?almondflour",
+      "ExpirationDate": "2025-04-30"
     },
     {
-      "Name": "Black Beans",
-      "Quantity": 4,
-      "Unit": "cans",
-      "Tags": ["Canned Goods"],
-      "ImageURL": "https://picsum.photos/300/400",
-      "ExpirationDate": "2024-07-19"
+      "Name": "Granola",
+      "Quantity": 2,
+      "Unit": "lbs",
+      "Tags": ["Dry Goods"],
+      "ImageURL": "https://picsum.photos/200/300?granola",
+      "ExpirationDate": "2025-05-10"
     },
     {
-      "Name": "Sourdough Bread",
+      "Name": "Black Tea",
+      "Quantity": 50,
+      "Unit": "pcs",
+      "Tags": ["Dry Goods"],
+      "ImageURL": "https://picsum.photos/200/300?blacktea",
+      "ExpirationDate": "2024-10-20"
+    },
+    {
+      "Name": "Basmati Rice",
+      "Quantity": 3,
+      "Unit": "lbs",
+      "Tags": ["Dry Goods"],
+      "ImageURL": "https://picsum.photos/200/300?basmatirice",
+      "ExpirationDate": "2025-06-11"
+    },
+    {
+      "Name": "Sushi Rice",
+      "Quantity": 2,
+      "Unit": "lbs",
+      "Tags": ["Dry Goods"],
+      "ImageURL": "https://picsum.photos/200/300?sushirice",
+      "ExpirationDate": "2024-07-20"
+    },
+    {
+      "Name": "Ramen Noodles",
+      "Quantity": 5,
+      "Unit": "packs",
+      "Tags": ["Dry Goods"],
+      "ImageURL": "https://picsum.photos/200/300?ramennoodles",
+      "ExpirationDate": "2024-09-14"
+    },
+    {
+      "Name": "Udon Noodles",
+      "Quantity": 3,
+      "Unit": "packs",
+      "Tags": ["Dry Goods"],
+      "ImageURL": "https://picsum.photos/200/300?udonnoodles",
+      "ExpirationDate": "2024-08-05"
+    },
+    {
+      "Name": "Sourdough Loaf",
       "Quantity": 2,
       "Unit": "loaves",
-      "Tags": ["Bread & Bakery"],
-      "ImageURL": "https://picsum.photos/400/200",
+      "Tags": ["Dry Goods", "Bread & Bakery"],
+      "ImageURL": "https://picsum.photos/200/300?sourdoughloaf",
       "ExpirationDate": "2024-03-30"
     },
     {
-      "Name": "Strawberries",
+      "Name": "Whole Wheat Bread",
+      "Quantity": 2,
+      "Unit": "loaves",
+      "Tags": ["Dry Goods", "Bread & Bakery"],
+      "ImageURL": "https://picsum.photos/200/300?wholewheatbread",
+      "ExpirationDate": "2024-04-15"
+    },
+    {
+      "Name": "Baguette",
+      "Quantity": 2,
+      "Unit": "loaves",
+      "Tags": ["Dry Goods", "Bread & Bakery"],
+      "ImageURL": "https://picsum.photos/200/300?baguette",
+      "ExpirationDate": "2024-04-22"
+    },
+    {
+      "Name": "Pita Bread",
+      "Quantity": 6,
+      "Unit": "pcs",
+      "Tags": ["Dry Goods", "Bread & Bakery"],
+      "ImageURL": "https://picsum.photos/200/300?pitabread",
+      "ExpirationDate": "2024-05-05"
+    },
+    {
+      "Name": "All-Purpose Flour",
+      "Quantity": 5,
+      "Unit": "lbs",
+      "Tags": ["Baking Supplies"],
+      "ImageURL": "https://picsum.photos/200/300?flour",
+      "ExpirationDate": "2025-01-12"
+    },
+    {
+      "Name": "Granulated Sugar",
+      "Quantity": 4,
+      "Unit": "lbs",
+      "Tags": ["Baking Supplies"],
+      "ImageURL": "https://picsum.photos/200/300?sugar",
+      "ExpirationDate": "2025-02-09"
+    },
+    {
+      "Name": "Baking Powder",
+      "Quantity": 1,
+      "Unit": "can",
+      "Tags": ["Baking Supplies"],
+      "ImageURL": "https://picsum.photos/200/300?bakingpowder",
+      "ExpirationDate": "2024-12-15"
+    },
+    {
+      "Name": "Baking Soda",
+      "Quantity": 1,
+      "Unit": "box",
+      "Tags": ["Baking Supplies"],
+      "ImageURL": "https://picsum.photos/200/300?bakingsoda",
+      "ExpirationDate": "2024-11-07"
+    },
+    {
+      "Name": "Yeast",
+      "Quantity": 2,
+      "Unit": "packs",
+      "Tags": ["Baking Supplies"],
+      "ImageURL": "https://picsum.photos/200/300?yeast",
+      "ExpirationDate": "2024-10-21"
+    },
+    {
+      "Name": "Cocoa Powder",
       "Quantity": 1,
       "Unit": "lbs",
-      "Tags": ["Produce"],
-      "ImageURL": "https://picsum.photos/450/300",
-      "ExpirationDate": "2024-04-05"
+      "Tags": ["Baking Supplies"],
+      "ImageURL": "https://picsum.photos/200/300?cocoapowder",
+      "ExpirationDate": "2025-03-15"
     },
     {
-      "Name": "Greek Yogurt",
-      "Quantity": 3,
-      "Unit": "cups",
-      "Tags": ["Dairy & Eggs"],
-      "ImageURL": "https://picsum.photos/300/450",
-      "ExpirationDate": "2024-05-20"
+      "Name": "Vanilla Extract",
+      "Quantity": 1,
+      "Unit": "bottle",
+      "Tags": ["Baking Supplies"],
+      "ImageURL": "https://picsum.photos/200/300?vanillaextract",
+      "ExpirationDate": "2025-04-10"
     },
     {
-      "Name": "Salmon Fillets",
+      "Name": "Powdered Sugar",
       "Quantity": 2,
-      "Unit": "kg",
-      "Tags": ["Meat & Seafood"],
-      "ImageURL": "https://picsum.photos/200/300",
-      "ExpirationDate": "2024-06-08"
+      "Unit": "lbs",
+      "Tags": ["Baking Supplies"],
+      "ImageURL": "https://picsum.photos/200/300?powderedsugar",
+      "ExpirationDate": "2025-05-19"
+    },
+    {
+      "Name": "Brown Sugar",
+      "Quantity": 2,
+      "Unit": "lbs",
+      "Tags": ["Baking Supplies"],
+      "ImageURL": "https://picsum.photos/200/300?brownsugar",
+      "ExpirationDate": "2025-06-22"
+    },
+    {
+      "Name": "Almond Flour",
+      "Quantity": 2,
+      "Unit": "lbs",
+      "Tags": ["Baking Supplies"],
+      "ImageURL": "https://picsum.photos/200/300?almondflour",
+      "ExpirationDate": "2024-07-30"
+    },
+    {
+      "Name": "Eggs",
+      "Quantity": 12,
+      "Unit": "pcs",
+      "Tags": ["Baking Supplies", "Dairy & Eggs"],
+      "ImageURL": "https://picsum.photos/200/300?eggs",
+      "ExpirationDate": "2024-08-25"
+    },
+    {
+      "Name": "Butter",
+      "Quantity": 4,
+      "Unit": "sticks",
+      "Tags": ["Baking Supplies", "Dairy & Eggs"],
+      "ImageURL": "https://picsum.photos/200/300?butter",
+      "ExpirationDate": "2024-09-10"
+    },
+    {
+      "Name": "Chocolate Chips",
+      "Quantity": 2,
+      "Unit": "bags",
+      "Tags": ["Baking Supplies"],
+      "ImageURL": "https://picsum.photos/200/300?chocolatechips",
+      "ExpirationDate": "2025-07-05"
+    },
+    {
+      "Name": "Pecans",
+      "Quantity": 1,
+      "Unit": "lbs",
+      "Tags": ["Baking Supplies", "Snacks"],
+      "ImageURL": "https://picsum.photos/200/300?pecans",
+      "ExpirationDate": "2024-12-11"
     },
     {
       "Name": "Walnuts",
       "Quantity": 1,
       "Unit": "lbs",
-      "Tags": ["Snacks"],
-      "ImageURL": "https://picsum.photos/300/200",
-      "ExpirationDate": "2024-11-15"
+      "Tags": ["Baking Supplies", "Snacks"],
+      "ImageURL": "https://picsum.photos/200/300?walnuts",
+      "ExpirationDate": "2025-01-08"
     },
     {
-      "Name": "Honey",
+      "Name": "All-Purpose Flour",
+      "Quantity": 5,
+      "Unit": "lbs",
+      "Tags": ["Baking Supplies"],
+      "ImageURL": "https://picsum.photos/200/300?flour",
+      "ExpirationDate": "2025-01-12"
+    },
+    {
+      "Name": "Granulated Sugar",
+      "Quantity": 4,
+      "Unit": "lbs",
+      "Tags": ["Baking Supplies"],
+      "ImageURL": "https://picsum.photos/200/300?sugar",
+      "ExpirationDate": "2025-02-09"
+    },
+    {
+      "Name": "Baking Powder",
+      "Quantity": 1,
+      "Unit": "can",
+      "Tags": ["Baking Supplies"],
+      "ImageURL": "https://picsum.photos/200/300?bakingpowder",
+      "ExpirationDate": "2024-12-15"
+    },
+    {
+      "Name": "Baking Soda",
+      "Quantity": 1,
+      "Unit": "box",
+      "Tags": ["Baking Supplies"],
+      "ImageURL": "https://picsum.photos/200/300?bakingsoda",
+      "ExpirationDate": "2024-11-07"
+    },
+    {
+      "Name": "Yeast",
+      "Quantity": 2,
+      "Unit": "packs",
+      "Tags": ["Baking Supplies"],
+      "ImageURL": "https://picsum.photos/200/300?yeast",
+      "ExpirationDate": "2024-10-21"
+    },
+    {
+      "Name": "Cocoa Powder",
+      "Quantity": 1,
+      "Unit": "lbs",
+      "Tags": ["Baking Supplies"],
+      "ImageURL": "https://picsum.photos/200/300?cocoapowder",
+      "ExpirationDate": "2025-03-15"
+    },
+    {
+      "Name": "Vanilla Extract",
+      "Quantity": 1,
+      "Unit": "bottle",
+      "Tags": ["Baking Supplies"],
+      "ImageURL": "https://picsum.photos/200/300?vanillaextract",
+      "ExpirationDate": "2025-04-10"
+    },
+    {
+      "Name": "Powdered Sugar",
+      "Quantity": 2,
+      "Unit": "lbs",
+      "Tags": ["Baking Supplies"],
+      "ImageURL": "https://picsum.photos/200/300?powderedsugar",
+      "ExpirationDate": "2025-05-19"
+    },
+    {
+      "Name": "Brown Sugar",
+      "Quantity": 2,
+      "Unit": "lbs",
+      "Tags": ["Baking Supplies"],
+      "ImageURL": "https://picsum.photos/200/300?brownsugar",
+      "ExpirationDate": "2025-06-22"
+    },
+    {
+      "Name": "Almond Flour",
+      "Quantity": 2,
+      "Unit": "lbs",
+      "Tags": ["Baking Supplies"],
+      "ImageURL": "https://picsum.photos/200/300?almondflour",
+      "ExpirationDate": "2024-07-30"
+    },
+    {
+      "Name": "Eggs",
+      "Quantity": 12,
+      "Unit": "pcs",
+      "Tags": ["Baking Supplies", "Dairy & Eggs"],
+      "ImageURL": "https://picsum.photos/200/300?eggs",
+      "ExpirationDate": "2024-08-25"
+    },
+    {
+      "Name": "Butter",
+      "Quantity": 4,
+      "Unit": "sticks",
+      "Tags": ["Baking Supplies", "Dairy & Eggs"],
+      "ImageURL": "https://picsum.photos/200/300?butter",
+      "ExpirationDate": "2024-09-10"
+    },
+    {
+      "Name": "Chocolate Chips",
+      "Quantity": 2,
+      "Unit": "bags",
+      "Tags": ["Baking Supplies"],
+      "ImageURL": "https://picsum.photos/200/300?chocolatechips",
+      "ExpirationDate": "2025-07-05"
+    },
+    {
+      "Name": "Pecans",
+      "Quantity": 1,
+      "Unit": "lbs",
+      "Tags": ["Baking Supplies", "Snacks"],
+      "ImageURL": "https://picsum.photos/200/300?pecans",
+      "ExpirationDate": "2024-12-11"
+    },
+    {
+      "Name": "Walnuts",
+      "Quantity": 1,
+      "Unit": "lbs",
+      "Tags": ["Baking Supplies", "Snacks"],
+      "ImageURL": "https://picsum.photos/200/300?walnuts",
+      "ExpirationDate": "2025-01-08"
+    },
+    {
+      "Name": "Ketchup",
+      "Quantity": 1,
+      "Unit": "bottle",
+      "Tags": ["Condiments"],
+      "ImageURL": "https://picsum.photos/200/300?ketchup",
+      "ExpirationDate": "2024-11-30"
+    },
+    {
+      "Name": "Mustard",
+      "Quantity": 1,
+      "Unit": "bottle",
+      "Tags": ["Condiments"],
+      "ImageURL": "https://picsum.photos/200/300?mustard",
+      "ExpirationDate": "2025-01-15"
+    },
+    {
+      "Name": "Mayonnaise",
       "Quantity": 1,
       "Unit": "jar",
-      "Tags": ["Sweets"],
-      "ImageURL": "https://picsum.photos/200/200",
-      "ExpirationDate": "2024-12-22"
+      "Tags": ["Condiments"],
+      "ImageURL": "https://picsum.photos/200/300?mayonnaise",
+      "ExpirationDate": "2024-12-20"
+    },
+    {
+      "Name": "Soy Sauce",
+      "Quantity": 1,
+      "Unit": "bottle",
+      "Tags": ["Condiments"],
+      "ImageURL": "https://picsum.photos/200/300?soysauce",
+      "ExpirationDate": "2024-10-05"
+    },
+    {
+      "Name": "Hot Sauce",
+      "Quantity": 1,
+      "Unit": "bottle",
+      "Tags": ["Condiments"],
+      "ImageURL": "https://picsum.photos/200/300?hotsauce",
+      "ExpirationDate": "2025-02-22"
+    },
+    {
+      "Name": "Barbecue Sauce",
+      "Quantity": 1,
+      "Unit": "bottle",
+      "Tags": ["Condiments"],
+      "ImageURL": "https://picsum.photos/200/300?bbqsauce",
+      "ExpirationDate": "2024-08-17"
+    },
+    {
+      "Name": "Olive Oil",
+      "Quantity": 1,
+      "Unit": "bottle",
+      "Tags": ["Condiments", "Oils & Vinegars"],
+      "ImageURL": "https://picsum.photos/200/300?oliveoil",
+      "ExpirationDate": "2024-09-10"
+    },
+    {
+      "Name": "Balsamic Vinegar",
+      "Quantity": 1,
+      "Unit": "bottle",
+      "Tags": ["Condiments", "Oils & Vinegars"],
+      "ImageURL": "https://picsum.photos/200/300?balsamic",
+      "ExpirationDate": "2024-07-25"
+    },
+    {
+      "Name": "Ranch Dressing",
+      "Quantity": 1,
+      "Unit": "bottle",
+      "Tags": ["Condiments"],
+      "ImageURL": "https://picsum.photos/200/300?ranch",
+      "ExpirationDate": "2024-10-15"
+    },
+    {
+      "Name": "Sriracha",
+      "Quantity": 1,
+      "Unit": "bottle",
+      "Tags": ["Condiments"],
+      "ImageURL": "https://picsum.photos/200/300?sriracha",
+      "ExpirationDate": "2024-11-28"
+    },
+    {
+      "Name": "Peanut Butter",
+      "Quantity": 1,
+      "Unit": "jar",
+      "Tags": ["Condiments", "Spreads"],
+      "ImageURL": "https://picsum.photos/200/300?peanutbutter",
+      "ExpirationDate": "2025-03-12"
+    },
+    {
+      "Name": "Jam",
+      "Quantity": 2,
+      "Unit": "jar",
+      "Tags": ["Condiments", "Spreads"],
+      "ImageURL": "https://picsum.photos/200/300?jam",
+      "ExpirationDate": "2025-04-07"
+    },
+    {
+      "Name": "Mineral Water",
+      "Quantity": 6,
+      "Unit": "bottles",
+      "Tags": ["Beverages"],
+      "ImageURL": "https://picsum.photos/200/300?mineralwater",
+      "ExpirationDate": "2025-05-21"
+    },
+    {
+      "Name": "Apple Juice",
+      "Quantity": 2,
+      "Unit": "liters",
+      "Tags": ["Beverages"],
+      "ImageURL": "https://picsum.photos/200/300?applejuice",
+      "ExpirationDate": "2024-12-15"
+    },
+    {
+      "Name": "Orange Juice",
+      "Quantity": 2,
+      "Unit": "liters",
+      "Tags": ["Beverages"],
+      "ImageURL": "https://picsum.photos/200/300?orangejuice",
+      "ExpirationDate": "2024-12-20"
     },
     {
       "Name": "Green Tea",
       "Quantity": 1,
       "Unit": "box",
       "Tags": ["Beverages"],
-      "ImageURL": "https://picsum.photos/300/300",
-      "ExpirationDate": "2024-09-27"
+      "ImageURL": "https://picsum.photos/200/300?greentea",
+      "ExpirationDate": "2025-06-30"
+    },
+    {
+      "Name": "Coffee Beans",
+      "Quantity": 500,
+      "Unit": "grams",
+      "Tags": ["Beverages"],
+      "ImageURL": "https://picsum.photos/200/300?coffeebeans",
+      "ExpirationDate": "2025-03-17"
+    },
+    {
+      "Name": "Red Wine",
+      "Quantity": 2,
+      "Unit": "bottles",
+      "Tags": ["Beverages"],
+      "ImageURL": "https://picsum.photos/200/300?redwine",
+      "ExpirationDate": "2026-11-24"
+    },
+    {
+      "Name": "White Wine",
+      "Quantity": 2,
+      "Unit": "bottles",
+      "Tags": ["Beverages"],
+      "ImageURL": "https://picsum.photos/200/300?whitewine",
+      "ExpirationDate": "2026-08-19"
+    },
+    {
+      "Name": "Beer",
+      "Quantity": 12,
+      "Unit": "cans",
+      "Tags": ["Beverages"],
+      "ImageURL": "https://picsum.photos/200/300?beer",
+      "ExpirationDate": "2024-09-01"
+    },
+    {
+      "Name": "Soda",
+      "Quantity": 6,
+      "Unit": "cans",
+      "Tags": ["Beverages"],
+      "ImageURL": "https://picsum.photos/200/300?soda",
+      "ExpirationDate": "2024-10-12"
+    },
+    {
+      "Name": "Milk",
+      "Quantity": 2,
+      "Unit": "liters",
+      "Tags": ["Beverages", "Dairy & Eggs"],
+      "ImageURL": "https://picsum.photos/200/300?milk",
+      "ExpirationDate": "2024-07-05"
+    },
+    {
+      "Name": "Sparkling Water",
+      "Quantity": 4,
+      "Unit": "bottles",
+      "Tags": ["Beverages"],
+      "ImageURL": "https://picsum.photos/200/300?sparklingwater",
+      "ExpirationDate": "2025-01-22"
+    },
+    {
+      "Name": "Energy Drink",
+      "Quantity": 6,
+      "Unit": "cans",
+      "Tags": ["Beverages"],
+      "ImageURL": "https://picsum.photos/200/300?energydrink",
+      "ExpirationDate": "2024-11-09"
+    },
+    {
+      "Name": "Frozen Peas",
+      "Quantity": 2,
+      "Unit": "bags",
+      "Tags": ["Frozen Foods"],
+      "ImageURL": "https://picsum.photos/200/300?peas",
+      "ExpirationDate": "2025-01-15"
+    },
+    {
+      "Name": "Frozen Corn",
+      "Quantity": 2,
+      "Unit": "bags",
+      "Tags": ["Frozen Foods"],
+      "ImageURL": "https://picsum.photos/200/300?corn",
+      "ExpirationDate": "2025-02-20"
+    },
+    {
+      "Name": "Frozen Mixed Vegetables",
+      "Quantity": 3,
+      "Unit": "bags",
+      "Tags": ["Frozen Foods"],
+      "ImageURL": "https://picsum.photos/200/300?mixedveggies",
+      "ExpirationDate": "2025-03-30"
+    },
+    {
+      "Name": "Frozen Berries",
+      "Quantity": 2,
+      "Unit": "bags",
+      "Tags": ["Frozen Foods"],
+      "ImageURL": "https://picsum.photos/200/300?berries",
+      "ExpirationDate": "2025-04-25"
     },
     {
       "Name": "Frozen Pizza",
       "Quantity": 2,
       "Unit": "pcs",
       "Tags": ["Frozen Foods"],
-      "ImageURL": "https://picsum.photos/250/250",
-      "ExpirationDate": "2024-10-31"
+      "ImageURL": "https://picsum.photos/200/300?pizza",
+      "ExpirationDate": "2024-05-19"
+    },
+    {
+      "Name": "Ice Cream",
+      "Quantity": 1,
+      "Unit": "tub",
+      "Tags": ["Frozen Foods"],
+      "ImageURL": "https://picsum.photos/200/300?icecream",
+      "ExpirationDate": "2025-06-17"
+    },
+    {
+      "Name": "Frozen Shrimp",
+      "Quantity": 1,
+      "Unit": "kg",
+      "Tags": ["Frozen Foods", "Meat & Seafood"],
+      "ImageURL": "https://picsum.photos/200/300?shrimp",
+      "ExpirationDate": "2025-07-08"
+    },
+    {
+      "Name": "Frozen Chicken Nuggets",
+      "Quantity": 1,
+      "Unit": "bag",
+      "Tags": ["Frozen Foods", "Meat & Seafood"],
+      "ImageURL": "https://picsum.photos/200/300?chickennuggets",
+      "ExpirationDate": "2025-08-12"
+    },
+    {
+      "Name": "Frozen French Fries",
+      "Quantity": 2,
+      "Unit": "bags",
+      "Tags": ["Frozen Foods"],
+      "ImageURL": "https://picsum.photos/200/300?frenchfries",
+      "ExpirationDate": "2025-09-09"
+    },
+    {
+      "Name": "Frozen Waffles",
+      "Quantity": 2,
+      "Unit": "boxes",
+      "Tags": ["Frozen Foods"],
+      "ImageURL": "https://picsum.photos/200/300?waffles",
+      "ExpirationDate": "2025-10-30"
+    },
+    {
+      "Name": "Frozen Spinach",
+      "Quantity": 2,
+      "Unit": "bags",
+      "Tags": ["Frozen Foods"],
+      "ImageURL": "https://picsum.photos/200/300?spinach",
+      "ExpirationDate": "2025-11-25"
+    },
+    {
+      "Name": "Frozen Dumplings",
+      "Quantity": 3,
+      "Unit": "bags",
+      "Tags": ["Frozen Foods"],
+      "ImageURL": "https://picsum.photos/200/300?dumplings",
+      "ExpirationDate": "2025-12-20"
     }
   ]
 }
