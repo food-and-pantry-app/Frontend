@@ -1,7 +1,7 @@
 /* Pantry Section - Sets the background and layout for the pantry */
 .pantry {
   width: 100vw;
-  height: auto;
+  height: 100vh;
   background-image: url('../../assets/papyrus.png');
   background-repeat: repeat;
   background-attachment: fixed;
