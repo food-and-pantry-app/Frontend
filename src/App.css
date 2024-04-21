@@ -1,10 +1,32 @@
-body,
+/* body, */
 #root {
   width: 100vw;
   min-height: 100vh;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  /* overflow-x: hidden; */
+  overflow-y: auto;
+}
+
+body {
+  background: linear-gradient(-45deg, #424242, #000000, #242424, #818181);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

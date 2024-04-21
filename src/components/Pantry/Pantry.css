@@ -2,10 +2,10 @@
 .pantry {
   width: 100vw;
   height: 100vh;
-  background-image: url('../../assets/papyrus.png');
+  /* background-image: url('../../assets/papyrus.png');
   background-repeat: repeat;
   background-attachment: fixed;
-  background-size: 42%;
+  background-size: 42%; */
 }
 
 /* Pantry Grid - Organizes pantry items in a grid */
