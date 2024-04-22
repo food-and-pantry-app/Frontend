@@ -1,8 +1,73 @@
 /* Pantry Section - Sets the background and layout for the pantry */
 .pantry {
-  z-index: 10;
+  margin-top: 12.5vh;
+  /* z-index: 10; */
   width: 100vw;
   height: 100vh;
+}
+
+.pantry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  height: 50px;
+  background-image: linear-gradient(#202429, #2d3237);
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.55);
+  border-bottom: solid 5px rgba(0, 0, 0, 0.25);
+  color: white;
+  font-family: 'Papyrus', serif;
+  font-size: 2rem;
+  padding: 15px 30px;
+  margin: -20px auto 30px;
+}
+
+.pantry-header-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 25px;
+}
+
+.button-add {
+  background-color: green;
+  padding: 0.75rem;
+  border-radius: 50%;
+  margin-right: 25px;
+  color: white;
+  border: solid 2px #424242;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-delete {
+  background-color: red;
+  padding: 0.75rem;
+  border-radius: 50%;
+  color: white;
+  border: solid 2px #424242;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-add:hover {
+  background-color: #00ff00;
+  border: solid 3px #1a1a1a;
+  box-shadow: 0 0 15px #00ff00;
+  padding: 0.825rem;
+  content: 'Add Item';
+}
+
+.button-delete:hover {
+  background-color: #ff0000;
+  border: solid 3px #1a1a1a;
+  box-shadow: 0 0 15px #ff0000;
+  padding: 0.825rem;
 }
 
 /* Pantry Grid - Organizes pantry items in a grid */
@@ -16,12 +81,6 @@
   margin: auto;
 }
 
-/* Resets margins and paddings for all child elements */
-/* .pantry-item * {
-  margin: 0;
-  padding: 0;
-} */
-
 /* Pantry Item - Style for individual pantry items */
 .pantry-item {
   display: flex;
@@ -29,6 +88,7 @@
   align-items: center;
   text-align: center;
   min-width: 231px;
+  height: auto;
   min-height: 275px;
   background-color: rgba(42, 42, 42, 0.42);
   border-radius: 6px;
@@ -42,7 +102,7 @@
 }
 
 /* Pantry Item Names - Styles the name of the pantry item */
-.pantry-item-header {
+.pantry-item-name {
   width: 100%;
   height: 2rem;
   padding: 1.25rem 0;
@@ -57,14 +117,14 @@
 .title {
   padding-left: 1rem;
   color: #d2d2d2;
-  font-size: 18rem;
+  font-size: 12rem;
   font-weight: 60;
   font-family: 'Papyrus', cursive;
   /* font-family: 'Papyrus', cursive; */
 }
 
 /* Delete Button Style */
-.button-delete {
+.button-select-delete {
   /* width: 0.5rem;
   height: 0.5rem; */
   padding: 0.5rem;
@@ -79,7 +139,7 @@
   transition: all 0.3s ease-in-out; /* Added transition property */
 }
 
-.button-delete:hover {
+.button-select-delete:hover {
   background-color: #ff0000; /* Darker red on hover */
   border: solid 3px #1a1a1a;
   /* border-radius: 45%; */

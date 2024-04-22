@@ -2,8 +2,8 @@
   display: flex;
   overflow-x: auto;
   align-items: stretch;
-  height: 100vh;
-  margin-top: 15vh;
+  /* height: 100vh; */
+  margin-top: 12.5vh;
 }
 
 .buffer {
@@ -13,7 +13,7 @@
 .recipe-card {
   flex: 0 0 33vw;
   margin-right: 33vw;
-  height: 75vh;
+  height: 80vh;
   background-size: cover;
   position: relative;
   background-color: rgba(42, 42, 42, 0.42);
@@ -31,14 +31,56 @@
   padding: 20px;
   box-sizing: border-box;
 }
+.recipe-header {
+  width: 100%;
+  height: 2rem;
+  padding: 1.25rem 0;
+  margin: 0 auto;
+  /* background-color: rgba(28, 28, 28, 0.75); */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 
 .title {
+  padding-left: 1rem;
+  color: #d2d2d2;
+  font-size: 2rem;
+  font-weight: 60;
+  font-family: 'Papyrus', cursive;
+  /* font-family: 'Papyrus', cursive; */
+}
+
+/* Delete Button Style */
+.button-select-delete {
+  padding: 0.5rem;
+  background-color: #c33d3d; /* Red color for delete button */
+  color: white;
+  border: solid 2px #424242;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  margin-left: auto;
+  margin-right: 1rem;
+  transition: all 0.3s ease-in-out; /* Added transition property */
+  margin-top: -10px; /* Move the button up by 5 pixels */
+}
+
+.button-select-delete:hover {
+  background-color: #ff0000; /* Darker red on hover */
+  border: solid 3px #1a1a1a;
+  /* border-radius: 45%; */
+  box-shadow: 0 0 15px #ff0000;
+  padding: 0.525rem;
+}
+/* .title {
   align-items: left;
   font-size: 2em;
   font-weight: bold;
   margin: 10px 0;
   font-family: 'Ringbearer';
-}
+} */
 
 .img-container {
   aspect-ratio: 3 / 2; /* Maintain a fixed aspect ratio of 3:2 */

@@ -1,0 +1,121 @@
+.navbar {
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 8vh;
+  background-image: linear-gradient(#070809, #2d3237);
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-bottom: solid 3px rgba(0, 0, 0, 0.25);
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  background: url(../../assets/treeLogo.png) no-repeat center center;
+  background-size: contain;
+  margin-left: 225px;
+}
+
+h1 {
+  margin-left: 15px;
+  margin-top: 45px;
+  color: white;
+  font-family: 'Papyrus', serif;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navButton-recipes {
+  background: url(../../assets/recipes.svg) no-repeat center center;
+  background-size: 25px;
+}
+
+.navButton-pantry {
+  background: url(../../assets/pantry.svg) no-repeat center center;
+  background-size: 25px;
+}
+
+.navButton-recipes,
+.navButton-pantry {
+  border-radius: 50%;
+  border: solid 1px black;
+  width: 42px;
+  height: 42px;
+  margin-right: 20px;
+  background-color: antiquewhite;
+  transition:
+    width 0.3s ease-in-out,
+    height 0.3s ease-in-out;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin-right: 225px;
+}
+
+input {
+  width: 200px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 25px;
+  font-size: 1rem;
+  /* font-family: 'IM Fell English SC', serif; */
+  background-color: antiquewhite;
+  color: black;
+  transition:
+    width 0.3s ease-in-out,
+    height 0.3s ease-in-out;
+}
+
+.searchButton {
+  background: url(../../assets/search.svg) no-repeat center center;
+  background-size: 25px;
+  width: 42px;
+  height: 42px;
+  margin-left: 10px;
+  background-color: antiquewhite;
+  color: black;
+  border-radius: 50%;
+  border: solid 1px black;
+  width: 42px;
+  height: 42px;
+  transition:
+    width 0.3s ease-in-out,
+    height 0.3s ease-in-out;
+}
+
+.navButton-recipes:hover,
+.navButton-pantry:hover,
+.searchButton:hover {
+  width: 45px;
+  height: 45px;
+  box-shadow: 0 0 15px #13ffe7;
+  border-radius: 40%;
+  border: solid 2px black;
+}
+
+input:hover {
+  width: 225px;
+  box-shadow: 0 0 15px #13ffe7;
+  border-radius: 10px;
+  border: solid 2px black;
+}
