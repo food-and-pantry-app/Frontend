@@ -1,11 +1,8 @@
 /* Pantry Section - Sets the background and layout for the pantry */
 .pantry {
+  z-index: 10;
   width: 100vw;
   height: 100vh;
-  /* background-image: url('../../assets/papyrus.png');
-  background-repeat: repeat;
-  background-attachment: fixed;
-  background-size: 42%; */
 }
 
 /* Pantry Grid - Organizes pantry items in a grid */
@@ -20,10 +17,10 @@
 }
 
 /* Resets margins and paddings for all child elements */
-.pantry-item * {
+/* .pantry-item * {
   margin: 0;
   padding: 0;
-}
+} */
 
 /* Pantry Item - Style for individual pantry items */
 .pantry-item {
@@ -39,25 +36,55 @@
   box-shadow:
     inset 3px 3px 1px 0 rgba(255, 255, 255, 0.5),
     inset -3px -3px 1px 0 rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(1px);
-  -webkit-backdrop-filter: blur(1px);
-  color: #fff;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  /* color: #fff; */
 }
 
 /* Pantry Item Names - Styles the name of the pantry item */
-.pantry-item-names {
+.pantry-item-header {
   width: 100%;
-  height: 1rem;
-  padding: 1rem 0;
-  background-color: rgba(42, 42, 42, 0.666);
-  color: #ffffff;
-  font-size: 20px;
-  font-weight: 600;
-  font-family: 'Times New Roman', serif;
-  border-radius: 5px 5px 0 0;
+  height: 2rem;
+  padding: 1.25rem 0;
+  margin: 0 30px;
+  background-color: rgba(28, 28, 28, 0.75);
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.title {
+  padding-left: 1rem;
+  color: #d2d2d2;
+  font-size: 18rem;
+  font-weight: 60;
+  font-family: 'Papyrus', cursive;
+  /* font-family: 'Papyrus', cursive; */
+}
+
+/* Delete Button Style */
+.button-delete {
+  /* width: 0.5rem;
+  height: 0.5rem; */
+  padding: 0.5rem;
+  background-color: #c33d3d; /* Red color for delete button */
+  color: white;
+  border: solid 2px #424242;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  margin-left: auto;
+  margin-right: 1rem;
+  transition: all 0.3s ease-in-out; /* Added transition property */
+}
+
+.button-delete:hover {
+  background-color: #ff0000; /* Darker red on hover */
+  border: solid 3px #1a1a1a;
+  /* border-radius: 45%; */
+  box-shadow: 0 0 15px #ff0000;
+  padding: 0.525rem;
 }
 
 /* Pantry Item Tags - Styles the tags for the pantry item */
