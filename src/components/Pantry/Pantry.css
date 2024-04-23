@@ -125,8 +125,6 @@
 
 /* Delete Button Style */
 .button-select-delete {
-  /* width: 0.5rem;
-  height: 0.5rem; */
   padding: 0.5rem;
   background-color: #c33d3d; /* Red color for delete button */
   color: white;
@@ -142,7 +140,6 @@
 .button-select-delete:hover {
   background-color: #ff0000; /* Darker red on hover */
   border: solid 3px #1a1a1a;
-  /* border-radius: 45%; */
   box-shadow: 0 0 15px #ff0000;
   padding: 0.525rem;
 }

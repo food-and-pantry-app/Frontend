@@ -31,10 +31,8 @@ const Modal = ({ onClose, onSave }) => {
   return (
     <div className="modal-overlay">
       <div className="modal-content">
-        <button className="close-button" onClick={onClose}>
-          ×
-        </button>
-        <h2>Add New Pantry Item</h2>
+        <button className="modal-close" onClick={onClose} />
+        <h2 className="title">Add New Pantry Item</h2>
         <form onSubmit={handleSubmit}>
           <label htmlFor="itemName">Name:</label>
           <input
@@ -90,7 +88,6 @@ const Modal = ({ onClose, onSave }) => {
               <option value="Bag">Bag</option>
             </optgroup>
           </select>
-
           <label htmlFor="itemTags">Tags:</label>
           <select
             id="itemTags"
@@ -111,7 +108,6 @@ const Modal = ({ onClose, onSave }) => {
             <option value="Beverages">Beverages</option>
             <option value="Frozen Foods">Frozen Foods</option>
           </select>
-
           <label htmlFor="itemImageURL">Image URL:</label>
           <input
             id="itemImageURL"

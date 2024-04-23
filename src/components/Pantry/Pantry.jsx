@@ -36,11 +36,24 @@ const Pantry = () => {
     setShowDelete(!showDelete);
   };
 
-  const handleAddItem = (newItem) => {
-    // Function to handle adding new items after Modal form submission
+  const handleAddItem = async (newItem) => {
     setIsModalVisible(false); // Close modal on save
-    // Here, ideally you would send a request to the server to save the new item
-    setPantryItems([...pantryItems, newItem]); // For demonstration, we add directly
+    try {
+      const response = await axios.post(
+        'http://localhost:3000/api/pantry/',
+        newItem
+      );
+      if (response.status === 201) {
+        // Check if the item was created
+        fetchItems(); // Refetch all items to update the UI with complete data from the server
+        console.log('Item added successfully:', response.data);
+      } else {
+        console.error('Unexpected response:', response);
+      }
+    } catch (error) {
+      console.error('Error adding new item:', error);
+      alert('Failed to add item'); // Or handle the error in a more user-friendly way
+    }
   };
 
   return (
@@ -57,9 +70,13 @@ const Pantry = () => {
       </div>
       <div className="pantry-grid">
         {pantryItems.map((item, index) => {
-          const tagsArray = Array.isArray(item.Tags)
-            ? item.Tags
-            : item.Tags.split(', ');
+          // Safely process Tags data with the new conditional logic
+          const tagsArray = item.Tags
+            ? Array.isArray(item.Tags)
+              ? item.Tags
+              : item.Tags.split(', ')
+            : [];
+
           return (
             <div key={index} className="pantry-item">
               <div className="pantry-item-name">
@@ -93,6 +110,7 @@ const Pantry = () => {
           );
         })}
       </div>
+
       {isModalVisible && (
         <Modal
           onClose={() => setIsModalVisible(false)}

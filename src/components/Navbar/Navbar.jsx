@@ -21,6 +21,7 @@ export const Navbar = ({ onSearch, onShowRecipes, onShowPantry }) => {
         <button className="navButton-pantry" onClick={onShowPantry} />
         <div className="search">
           <input
+            className="searchBar"
             type="text"
             placeholder="Search..."
             value={filter}
