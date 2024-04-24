@@ -2,17 +2,29 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './Recipes.css';
 import RecipesModal from './RecipesModal/RecipesModal'; // Adjust the import path as necessary
+import GptModal from './RecipesModal/GenerateModal';
 
 export const Recipes = () => {
   const [recipes, setRecipes] = useState([]);
   const [showDelete, setShowDelete] = useState(false);
-  const [isModalVisible, setIsModalVisible] = useState(false); // State to manage modal visibility
+  const [isModalVisible, setIsModalVisible] = useState(false);
+  const [isGptModalVisible, setIsGptModalVisible] = useState(false);
+
+  const [gptPrompt, setGptPrompt] = useState(''); // State to store user input for GPT
 
   const fetchRecipes = async () => {
-    // Defined to be accessible elsewhere in the component
     try {
       const response = await axios.get('http://localhost:3000/api/recipes');
-      setRecipes(response.data.data); // Update state with fetched recipes
+      const normalizedRecipes = response.data.data.map((recipe) => ({
+        ...recipe,
+        Ingredients: Array.isArray(recipe.Ingredients)
+          ? recipe.Ingredients
+          : [],
+        Instructions: Array.isArray(recipe.Instructions)
+          ? recipe.Instructions
+          : [],
+      }));
+      setRecipes(normalizedRecipes); // Update state with normalized fetched recipes
     } catch (error) {
       console.error('Error fetching recipes:', error);
     }
@@ -67,6 +79,25 @@ export const Recipes = () => {
       console.error('Error adding new recipe:', error);
       alert('Failed to add recipe'); // Or handle the error in a more user-friendly way
     }
+    fetchRecipes();
+  };
+
+  const handleGenerateRecipe = async (prompt) => {
+    try {
+      const response = await axios.post(
+        'http://localhost:3000/api/recipes/generate',
+        { prompt }
+      );
+      if (response.status === 201) {
+        fetchRecipes(); // Refresh the recipe list
+        console.log('Recipe generated successfully:', response.data);
+      } else {
+        console.error('Unexpected response while generating recipe:', response);
+      }
+    } catch (error) {
+      console.error('Error generating recipe:', error);
+      alert('Failed to generate recipe');
+    }
   };
 
   return (
@@ -79,8 +110,8 @@ export const Recipes = () => {
             onClick={() => setIsModalVisible(true)} // Toggle modal visibility
           />
           <button
-            className="button-add"
-            onClick={() => setIsModalVisible(true)} // Toggle modal visibility
+            className="button-gpt"
+            onClick={() => setIsGptModalVisible(true)} // Open GPT modal
           />
           <button
             className="button-delete"
@@ -146,6 +177,12 @@ export const Recipes = () => {
         <RecipesModal
           onClose={() => setIsModalVisible(false)}
           onSave={handleAddRecipe}
+        />
+      )}
+      {isGptModalVisible && (
+        <GptModal
+          onClose={() => setIsGptModalVisible(false)}
+          onGenerate={handleGenerateRecipe}
         />
       )}
     </div>

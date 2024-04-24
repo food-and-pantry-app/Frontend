@@ -44,13 +44,30 @@
   margin-right: 25px;
 }
 
-.title {
+.button-gpt {
+  background-color: rgb(255, 221, 0);
+  padding: 0.75rem;
+  border-radius: 50%;
+  color: white;
+  border: solid 2px #424242;
+  transition: all 0.3s ease-in-out;
+  margin-right: 25px;
+}
+
+.button-gpt:hover {
+  background-color: #c3ff00;
+  border: solid 3px #1a1a1a;
+  box-shadow: 0 0 15px #eeff00;
+  padding: 0.825rem;
+  content: 'Add Item';
+}
+/* .title {
   padding-left: 1rem;
   color: #d2d2d2;
   font-size: 12rem;
   font-weight: 60;
   font-family: 'Papyrus', cursive;
-}
+} */
 
 .recipe-card {
   flex: 0 0 33vw;
@@ -91,13 +108,11 @@
   font-size: 2rem;
   font-weight: 60;
   font-family: 'Papyrus', cursive;
-  /* font-family: 'Papyrus', cursive; */
 }
 
-/* Delete Button Style */
-.button-select-delete {
+/* .button-select-delete {
   padding: 0.5rem;
-  background-color: #c33d3d; /* Red color for delete button */
+  background-color: #c33d3d;
   color: white;
   border: solid 2px #424242;
   border-radius: 50%;
@@ -105,17 +120,16 @@
   outline: none;
   margin-left: auto;
   margin-right: 1rem;
-  transition: all 0.3s ease-in-out; /* Added transition property */
-  margin-top: -10px; /* Move the button up by 5 pixels */
-}
+  transition: all 0.3s ease-in-out;
+  margin-top: -10px;
+} */
 
-.button-select-delete:hover {
-  background-color: #ff0000; /* Darker red on hover */
+/* .button-select-delete:hover {
+  background-color: #ff0000;
   border: solid 3px #1a1a1a;
-  /* border-radius: 45%; */
   box-shadow: 0 0 15px #ff0000;
   padding: 0.525rem;
-}
+} */
 /* .title {
   align-items: left;
   font-size: 2em;

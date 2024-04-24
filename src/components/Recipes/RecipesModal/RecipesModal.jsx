@@ -15,13 +15,19 @@ const RecipesModal = ({ onClose, onSave }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // Split ingredients and instructions by commas and trim whitespace
+    const ingredientsArray = ingredients.split(',').map((item) => item.trim());
+    const instructionsArray = instructions
+      .split(',')
+      .map((item) => item.trim());
+
     onSave({
       Title: title,
       Images: images,
       Cuisine: cuisine,
       Description: description,
-      Ingredients: ingredients,
-      Instructions: instructions,
+      Ingredients: ingredientsArray,
+      Instructions: instructionsArray,
       PrepTime: parseInt(prepTime, 10),
       CookTime: parseInt(cookTime, 10),
       TotalTime: parseInt(totalTime, 10),
@@ -77,13 +83,17 @@ const RecipesModal = ({ onClose, onSave }) => {
             value={description}
             onChange={(e) => setDescription(e.target.value)}
           />
-          <label htmlFor="recipeIngredients">Ingredients:</label>
+          <label htmlFor="recipeIngredients">
+            Ingredients: seperate by commas
+          </label>
           <textarea
             id="recipeIngredients"
             value={ingredients}
             onChange={(e) => setIngredients(e.target.value)}
           />
-          <label htmlFor="recipeInstructions">Instructions:</label>
+          <label htmlFor="recipeInstructions">
+            Instructions: seperate by commas
+          </label>
           <textarea
             id="recipeInstructions"
             value={instructions}
