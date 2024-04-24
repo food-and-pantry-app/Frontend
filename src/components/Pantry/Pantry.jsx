@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Pantry.css';
 import { getTagStyle } from './tagStyles.js';
-import Modal from './Modal/Modal.jsx'; // Assuming the Modal is correctly implemented for creating items
+import Modal from './PantryModal/PantryModal.jsx'; // Assuming the Modal is correctly implemented for creating items
 
 const Pantry = () => {
   const [pantryItems, setPantryItems] = useState([]);

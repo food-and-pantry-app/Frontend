@@ -1,9 +1,26 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './Recipes.css';
+import RecipesModal from './RecipesModal/RecipesModal'; // Adjust the import path as necessary
 
 export const Recipes = () => {
   const [recipes, setRecipes] = useState([]);
+  const [showDelete, setShowDelete] = useState(false);
+  const [isModalVisible, setIsModalVisible] = useState(false); // State to manage modal visibility
+
+  const fetchRecipes = async () => {
+    // Defined to be accessible elsewhere in the component
+    try {
+      const response = await axios.get('http://localhost:3000/api/recipes');
+      setRecipes(response.data.data); // Update state with fetched recipes
+    } catch (error) {
+      console.error('Error fetching recipes:', error);
+    }
+  };
+
+  useEffect(() => {
+    fetchRecipes(); // Call on component mount
+  }, []);
 
   useEffect(() => {
     const fetchRecipes = async () => {
@@ -28,17 +45,60 @@ export const Recipes = () => {
     }
   };
 
+  const toggleDeleteButtons = () => {
+    setShowDelete(!showDelete);
+  };
+
+  const handleAddRecipe = async (newRecipe) => {
+    setIsModalVisible(false); // Close modal on save
+    try {
+      const response = await axios.post(
+        'http://localhost:3000/api/recipes/',
+        newRecipe
+      );
+      if (response.status === 201) {
+        // Assuming 201 is the status for a successful creation
+        fetchRecipes(); // Re-fetch all recipes to update the UI
+        console.log('Recipe added successfully:', response.data);
+      } else {
+        console.error('Unexpected response:', response);
+      }
+    } catch (error) {
+      console.error('Error adding new recipe:', error);
+      alert('Failed to add recipe'); // Or handle the error in a more user-friendly way
+    }
+  };
+
   return (
     <div className="recipes-container">
+      <div className="controller">
+        <h2>Recipes</h2>
+        <div className="buttons">
+          <button
+            className="button-add"
+            onClick={() => setIsModalVisible(true)} // Toggle modal visibility
+          />
+          <button
+            className="button-add"
+            onClick={() => setIsModalVisible(true)} // Toggle modal visibility
+          />
+          <button
+            className="button-delete"
+            onClick={toggleDeleteButtons} // Toggle delete button visibility
+          />
+        </div>
+      </div>
       <div className="buffer" />
       {recipes.map((recipe, index) => (
         <div key={index} className="recipe-card">
           <div className="recipe-header">
             <h2 className="title">{recipe.Title}</h2>
-            <button
-              className="button-select-delete"
-              onClick={() => deleteRecipe(recipe.RecipeID)} // Use RecipeID for deletion
-            />
+            {showDelete && (
+              <button
+                className="button-select-delete"
+                onClick={() => deleteRecipe(recipe.RecipeID)}
+              />
+            )}
           </div>
           <div className="img-container">
             <img src={recipe.Images} alt={`Image of ${recipe.Title}`} />
@@ -82,6 +142,12 @@ export const Recipes = () => {
           </div>
         </div>
       ))}
+      {isModalVisible && (
+        <RecipesModal
+          onClose={() => setIsModalVisible(false)}
+          onSave={handleAddRecipe}
+        />
+      )}
     </div>
   );
 };

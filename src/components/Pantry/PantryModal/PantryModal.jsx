@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Modal.css';
+import './PantryModal.css';
 
 const Modal = ({ onClose, onSave }) => {
   const [name, setName] = useState('');

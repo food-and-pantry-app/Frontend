@@ -7,11 +7,13 @@
 }
 
 .pantry-header {
+  z-index: 9;
+  position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1280px;
-  height: 50px;
+  width: 1280px;
+  height: 45px;
   background-image: linear-gradient(#202429, #2d3237);
   box-shadow:
     rgba(0, 0, 0, 0.25) 0px 54px 55px,
@@ -26,7 +28,9 @@
   font-family: 'Papyrus', serif;
   font-size: 2rem;
   padding: 15px 30px;
-  margin: -20px auto 30px;
+  margin: -40px auto;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .pantry-header-buttons {
@@ -79,6 +83,7 @@
   padding: 20px;
   max-width: 1280px;
   margin: auto;
+  padding-top: 100px;
 }
 
 /* Pantry Item - Style for individual pantry items */
@@ -120,7 +125,6 @@
   font-size: 12rem;
   font-weight: 60;
   font-family: 'Papyrus', cursive;
-  /* font-family: 'Papyrus', cursive; */
 }
 
 /* Delete Button Style */
